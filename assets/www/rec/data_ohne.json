@@ -1,0 +1,87 @@
+[
+	{
+		"idi": "sahne",
+		"titel": "Caribbean",
+		"geschmack": "s&uuml;&szlig;-sauer",
+		"rezept": "6 cl Maracujasaft, 6 cl Ananassaft, 2 cl Kokosnußcreme, 1 cl Mangosirup,1 cl Sahne, 1 Limettenviertel, Minze", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "sahne",
+		"titel": "Schoko Orange",
+		"geschmack": "s&uuml;&szlig;",
+		"rezept": "2 Kugeln Vanilleeis, 2 cl Schokoladensirup, 2 cl Orangensirup, Milch zum auffüllen,2 EL steif geschlagene Sahne, 1/4 Orangenscheibe, Schokoladenraspel", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "fruchtig & saftig",
+		"titel": "Ipanema",
+		"geschmack": "sauer",
+		"rezept": "½ Limette auf Rohrzucker zerdrückt, evtl. Limettensirup, 4-8 cl Maracujasaft, Ginger Ale zum Auffüllen", 
+		"bewertung": "4"
+	},
+	{
+		"idi": "fruchtig & saftig",
+		"titel": "Peach Tea Cup",
+		"geschmack": "sauer",
+		"rezept": "1 Glas Ice Tea Peach, 2 cl frischer Limettensaft, einige Pfirsichstücke, 1 Limettenscheibe, 1 Spritzer Grenadine", 
+		"bewertung": "4"
+	},
+	{
+		"idi": "fruchtig & saftig",
+		"titel": "Avocado-Banane-Apfel-Cocktail",
+		"geschmack": "sauer",
+		"rezept": "1/3 sehr reife Avocado, 1/4 reife Banane,16 cl Apfelsaft, 2 cl frischer Limettensaft", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "fruchtig & saftig",
+		"titel": "Avocado-Banane-Apfel-Cocktail",
+		"geschmack": "sauer",
+		"rezept": "4 cl Orangensaft, 8 cl Kirschsaft, 2 cl Zuckersirup, 1 frisches Eigelb", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "fruchtig & saftig",
+		"titel": "Kirschenkuss",
+		"geschmack": "sauer",
+		"rezept": "9 cl Kirschsaft, 5 cl Ananassaft, 3 cl Zitronensaft, 2 cl Kirschsirup, 1/4 Ananasscheibe, 1 Cocktailkirsche", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "fruchtig & saftig",
+		"titel": "Erdbeer Tonic",
+		"geschmack": "sauer",
+		"rezept": "4 cl Erdbeersirup, 8 cl Tonic Water, 2 cl Zitronensaft (frisch)", 
+		"bewertung": "4"
+	},
+	{
+		"idi": "fruchtig & saftig",
+		"titel": "Mint Tonic",
+		"geschmack": "sauer",
+		"rezept": "4 Blätter Pfefferminze, 1 cl Zuckersirup, 4 cl Pfefferminzsirup, 6 cl Zitronensaft,Tonic Water, 1 Zitronenschalenspirale", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "fruchtig & saftig",
+		"titel": "Maracas",
+		"geschmack": "sauer",
+		"rezept": "4 cl Ananassaft, 4 cl Orangensaft, 4 cl Grapefruitsaft, 2 cl Maracujasirup,2 cl Zitronensaft, 1 Karambolenscheibe", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "fruchtig & saftig",
+		"titel": "Kater Killer - Virgin Mary",
+		"geschmack": "scharf",
+		"rezept": "6 cl Tomatensaft, 8 cl Consommé Double (klare Kraftbrühe), evtl. frisch gepresster Selleriesaft, Selleriesalz, Schwarzer Pfeffer aus der Mühle, Paprika, Tabasco, Worchestershire", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "fruchtig & saftig",
+		"titel": "Göttertrunk",
+		"geschmack": "sauer",
+		"rezept": "10 cl Orangensaft, 6 cl Johannisbeersaft, 2 cl Zitronensaft, Crushed Ice", 
+		"bewertung": "4"
+	}
+			
+]

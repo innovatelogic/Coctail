@@ -1,0 +1,234 @@
+[
+	{
+		"idi": "teq",
+		"titel": "Tequila Sunrise",
+		"geschmack": "sauer",
+		"rezept": "6 cl Tequila, 10 cl Orangensaft, 1 cl Zitronensaft, 2 cl Grenadine", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "teq",
+		"titel": "Mexicana",
+		"geschmack": "s&uuml;&szlig;-sauer",
+		"rezept": "4 cl Tequila, 4 cl Ananassaft, 1 cl Zitronensaft, 1 Spritzer Grenadine", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "teq",
+		"titel": "Tampico",
+		"geschmack": "s&uuml;&szlig;-sauer",
+		"rezept": "5 cl Tequila, 2 cl Galliano, 6 cl Preiselbeersaft, 3 cl Ananassaft", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "teq",
+		"titel": "Tequila Sour",
+		"geschmack": "sauer",
+		"rezept": "5 cl Tequila, 3 cl Zitronensaft, 1-2 cl Zuckersirup", 
+		"bewertung": "4"
+	},
+	{
+		"idi": "teq",
+		"titel": "Numero Uno",
+		"geschmack": "s&uuml;&szlig;",
+		"rezept": "3 cl Tequila, 3 cl Amaretto, 6 cl Sahne", 
+		"bewertung": "4"
+	},
+	{
+		"idi": "teq",
+		"titel": "Sangrita",
+		"geschmack": "scharf",
+		"rezept": "5 cl Tequila Gold, 5 cl Tomatensaft, 1 Spritzer Zitronensaft, 1 Prise schwarzer Pfeffer", 
+		"bewertung": "3"
+	},
+	{
+		"idi": "teq",
+		"titel": "Strawberry Margarita",
+		"geschmack": "s&uuml;&szlig;-sauer",
+		"rezept": "4 cl Tequila, 2 cl Cointreau, 2 cl Zitronensaft, 3-5 Erdbeeren, Eiswürfel", 
+		"bewertung": "3"
+	},
+	{
+		"idi": "teq",
+		"titel": "Zorro",
+		"geschmack": "sauer",
+		"rezept": "4 cl Tequila, 2 cl Cointreau, 1 cl Curaçao Blue, 4 cl Grapefruitsaft, Tonic Water", 
+		"bewertung": "3"
+	},
+	{
+		"idi": "teq",
+		"titel": "Margarita",
+		"geschmack": "sauer",
+		"rezept": "4 cl Tequila, 2 cl Cointreau, 2 cl Zitronensaft, Eiswürfel", 
+		"bewertung": "3"
+	},
+	{
+		"idi": "wod",
+		"titel": "Screwdriver",
+		"geschmack": "sauer",
+		"rezept": "5 cl Wodka, 100 ml Orangensaft, Eiswürfel", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "wod",
+		"titel": "Wodka Julep",
+		"geschmack": "s&uuml;&szlig;",
+		"rezept": "2 cl Zuckersirup, 5-6 Minzeblättchen, 5 cl Wodka", 
+		"bewertung": "4"
+	},
+	{
+		"idi": "wod",
+		"titel": "Touch Down",
+		"geschmack": "sauer",
+		"rezept": "4 cl Wodka, 2 cl Apricot Brandy, 1 cl Grenadine, 2 cl Zitronensaft, 10 cl Maracujasaft", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "wod",
+		"titel": "White Russian",
+		"geschmack": "neutral",
+		"rezept": "4 cl Wodka, 2 cl Kahlua, 1-3 cl Sahne", 
+		"bewertung": "3"
+	},
+	{
+		"idi": "wod",
+		"titel": "Wodka Tonic",
+		"geschmack": "neutral",
+		"rezept": "4 cl Wodka, 7-8 Eiswürfel, etwa 100 ml Tonic Water", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "wod",
+		"titel": "Wodka Cooler",
+		"geschmack": "s&uuml;&szlig;-sauer",
+		"rezept": "Eiswürfel, 5 cl Wodka, 3 cl Zitronensaft, 2 cl Zuckersirup, etwa 5 cl Ginger Ale", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "wod",
+		"titel": "Wodka Martini",
+		"geschmack": "sauer",
+		"rezept": "Eiswürfel, 6 cl Wodka, 1 Stück unbehandelte Zitronenschale, 1 grüne Olive", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "wod",
+		"titel": "Wodka Highball",
+		"geschmack": "sauer",
+		"rezept": "Eiswürfel, 5 cl Wodka, je 1 Scheibe und Schalenspirale von einer unbehandelten Zitrone, etwa 100 ml Bitter Lemon oder Tonic Water", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "wod",
+		"titel": "Wodka Fizz",
+		"geschmack": "sauer",
+		"rezept": "5 cl Wodka, 3 cl Zitronensaft, 2 cl Zuckersirup Sodawasser", 
+		"bewertung": "4"
+	},
+	{
+		"idi": "wod",
+		"titel": "Road Runner",
+		"geschmack": "s&uuml;&szlig;",
+		"rezept": "4 cl Wodka, 2 cl Amaretto, 2 cl Sahne, 2 cl flüssige Cream of Coconut", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "wod",
+		"titel": "Bloody Mary",
+		"geschmack": "scharf",
+		"rezept": "5 cl Wodka, 1 cl Zitronensaft, frisch gemahlener Pfeffer, Selleriesalz, 2 Spritzer Tabasco,3-5 Spritzer Worcestershire Sauce, 12 cl Tomatensaft", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "wod",
+		"titel": "Springtime Cooler",
+		"geschmack": "s&uuml;&szlig;-sauer",
+		"rezept": "4 cl Wodka, 2 cl Curaçao Blue, 6 cl Orangensaft, 3 cl Zitronensaft, 1 cl Zuckersirup", 
+		"bewertung": "4"
+	},
+	{
+		"idi": "wod",
+		"titel": "Wodka Sling",
+		"geschmack": "s&uuml;&szlig;-sauer",
+		"rezept": "5 cl Wodka, 3 cl Zitronensaft, 2 cl Zuckersirup, 6-7 Eiswürfel, 1 Schuss stilles Mineralwasser", 
+		"bewertung": "4"
+	},
+			{
+		"idi": "rum",
+		"titel": "Planters Punch",
+		"geschmack": "s&uuml;&szlig;-sauer",
+		"rezept": "Saft von 1/2 Limette, 100 ml Orangensaft, Zuckersirup nach Geschmack, 5 cl brauner Rum, Eiswürfel, etwa 2 cl Sodawasser", 
+		"bewertung": "4"
+	},
+	{
+		"idi": "rum",
+		"titel": "Cuba Libre",
+		"geschmack": "s&uuml;&szlig;-sauer",
+		"rezept": "1/2 unbehandelte Limette, Eiswürfel, 6 cl weißer Rum (Havanna Club), etwa 100 ml Cola", 
+		"bewertung": "4"
+	},
+	{
+		"idi": "rum",
+		"titel": "Daiquiri",
+		"geschmack": "s&uuml;&szlig;-sauer",
+		"rezept": "Eiswürfel, 5 cl weißer Rum, 1 1/2 cl Limetten- oder Zitronensaft, 1/2 TL Zuckersirup", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "rum",
+		"titel": "Zombie",
+		"geschmack": "sauer",
+		"rezept": "4 cl weißer Rum, 4 cl Brauner Rum, 2 cl hochprozentiger Jamaica Rum, 2 cl Cointreau,2 cl Grenadine, 2 cl Maracujasirup, 4 cl Zitronensaft, 4 cl Orangensaft,4 cl Ananassaft", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "rum",
+		"titel": "Cubanito",
+		"geschmack": "sauer",
+		"rezept": "Selleriesalz, frisch gemahlener Pfeffer, 2 Spritzer Tabasco, 3-5 Spritzer Worcestershire Sauce, 1 cl Zitronensaft, 5 cl Weißer Rum, 12 cl Tomatensaft", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "rum",
+		"titel": "Mai Tai",
+		"geschmack": "s&uuml;&szlig;-sauer",
+		"rezept": "Eiswürfel, 2 cl weißer Rum, 2 cl brauner Rum, 1 cl Curacao Tripple Sec, 1 cl Limettensaft, 3 cl Orangensaft, 3 cl Ananassaft, 1 Spritzer Grenadinesirup", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "rum",
+		"titel": "Pina Colada",
+		"geschmack": "s&uuml;&szlig;",
+		"rezept": "4 EL crushed Ice, 6 cl weißer Rum, 100 ml Ananassaft, 6 cl Kokosnusscreme", 
+		"bewertung": "5"
+	},
+	{
+		"idi": "rum",
+		"titel": "Strawberry Colada",
+		"geschmack": "s&uuml;&szlig;-sauer",
+		"rezept": "6 cl weißer Rum, 6 cl Ananassaft, 2 cl Zitronensaft, 4 cl flüssige Cream of Coconut, einige Erdbeeren, crushed Ice.Evtl. 1 Scheibe Ananas in Stücke geschnitten", 
+		"bewertung": "4"
+	},
+	{
+		"idi": "rum",
+		"titel": "Golden Gate Sling",
+		"geschmack": "bitter",
+		"rezept": "3 cl weißer Rum, 3 cl Cointreau, 3 cl Zitronensaft, 2 cl Grenadine, Bitter Orange", 
+		"bewertung": "4"
+	},
+	{
+		"idi": "rum",
+		"titel": "Pineapple Fizz",
+		"geschmack": "s&uuml;&szlig;-sauer",
+		"rezept": "5 cl weißer Rum, 3 cl Zitronensaft, 2 cl Zuckersirup, 6 cl Ananassaft, Sodawasser", 
+		"bewertung": "4"
+	},
+	{
+		"idi": "rum",
+		"titel": "Banana Royal",
+		"geschmack": "s&uuml;&szlig;",
+		"rezept": "½ Banane, 5 cl brauner Rum, 8 cl Ananassaft, 2 cl Sahne, 4 cl flüssige Cream of Coconut", 
+		"bewertung": "4"
+	}
+			
+]

@@ -1,0 +1,31 @@
+<?php
+class Order
+{	
+	public $id;
+	public $date;
+	public $userName;
+	public $userPhone;
+	public $userAdress;
+	public $workerId;
+	public $cofirmStatusId;
+	public $orderText;
+	
+
+	function addOrder($id, $date, $userName, $userPhone, $userAdress, $workerId, $cofirmStatusId, $orderText)
+	{
+
+		$this->id = $id;
+		$this->date = $date;
+		$this->userName = $userName;
+		$this->userPhone = $userPhone;
+		$this->userAdress = $userAdress;
+		$this->workerId = $workerId;
+		$this->cofirmStatusId = $cofirmStatusId;
+		$this->orderText = $orderText;
+	 
+	}
+} 
+
+
+?>
+

@@ -1,0 +1,290 @@
+<?php
+ini_set('display_errors',1);
+error_reporting(E_ALL);
+
+
+
+require_once('Order.php');
+
+class OrderControlService
+{
+		private $connect = null;
+		
+		function __construct() 
+		{
+
+		
+		echo 'connecting';
+			$this->connect = mysql_connect('localhost','innovate_lol','q1w2e3r4');
+	
+		
+		if(!$this->connect){
+			echo 'connect faild';
+	    	die(mysql_error());
+		}
+         if(!mysql_select_db('innovate_wrdpress', $this->connect))
+         {
+         	echo 'connect faild 2';
+	     	die(mysql_error($this->connect ));
+         }
+		 
+		}
+		
+		
+	public function getOrders(){
+			
+			/*if(isset($_SESSION['CategorySortId']) && $_SESSION['CategorySortId']!=0){
+				echo'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'.$_SESSION['CategorySortId'];
+			$src ="SELECT *	FROM `Order` WHERE `Order`.`categoryId`=".$_SESSION['CategorySortId']." ORDER BY `Order`.`id` ASC;";
+			}else{
+			*/
+			$src ="SELECT *	FROM `Order` ORDER BY `Order`.`date` DESC;";
+			//}
+			
+			//echo $src.'==good===';
+			
+			/*mysql_query("SET NAMES 'utf8_general_ci'");*/
+				
+			$result = mysql_query($src);
+			/*if(isset($result)){ echo '==good===';}*/
+								
+			$orderArray = array();	
+			$i = 0;	
+			
+			//echo "</br>";
+			$num_rows = mysql_num_rows($result);
+			
+			
+			if($num_rows > 0){
+			while($row = mysql_fetch_assoc($result))
+				{
+				//echo "<br>++++".$row['id']."++";
+					$order = new  Order();
+					
+					$order->addOrder($row['id'], 
+									$row['date'], 
+									$row['userName'], 
+									$row['userPhone'], 
+									$row['userAdress'], 
+									$row['workerId'], 
+									$row['cofirmStatusId'], 
+									$row['orderText']); 
+	 	
+					//$prod->render();
+					// $id,	$categoryId, $subCategoryId, $name, $price,	 $description,	$images, $date,	$avaliableAmount,	 $visible
+					$orderArray[]=$order;
+	 	 
+	 	 
+	 	 
+					$i++;
+				}
+			}
+
+			
+			
+		return $orderArray;
+		}
+		
+		public function getOrdersById($cId){
+						
+			$src ="SELECT *	FROM `Order` WHERE `Order`.`id`='".$cId."';";
+			//}
+			
+			//echo $src.'==good===';
+			
+			//mysql_query("SET NAMES 'cp1251'");
+			//$src ="SELECT *	FROM `Order` ORDER BY `Order`.`id` ASC;";
+			
+			$result = mysql_query($src);
+			//if(isset($result)){ echo '==good===';}
+								
+						
+			$row = mysql_fetch_assoc($result);
+				
+				//echo "<br>++++".$row['id']."++";
+					$order = new  Order();
+					$order->addOrder($row['id'], 
+									$row['date'], 
+									$row['userName'], 
+									$row['userPhone'], 
+									$row['userAdress'], 
+									$row['workerId'], 
+									$row['cofirmStatusId'], 
+									$row['orderText']); 
+	 	
+		return $order;
+		}
+		
+		
+		
+		public function getOrdersByCategoryIdandSubId($cId, $sId){
+			
+			
+			$src ="SELECT *	FROM `Order` WHERE `Order`.`categoryId`=".$cId." AND `Order`.`subCategoryId` = ".$sId." ORDER BY `Order`.`id` ASC;";
+		
+			
+			//echo $src.'==good===';
+			
+			mysql_query("SET NAMES 'cp1251'");
+			//$src ="SELECT *	FROM `Order` ORDER BY `Order`.`id` ASC;";
+			
+			$result = mysql_query($src);
+			//if(isset($result)){ echo '==good===';}
+								
+			$prodArray = array();	
+			$i = 0;	
+			//echo "</br>";
+			
+			if(mysql_num_rows($result ) > 0){
+			while($row = mysql_fetch_assoc($result))
+				{
+				//echo "<br>++++".$row['id']."++";
+					$prod = new  Order();
+					$prod->addOrder($row['id'], $row['categoryId'], $row['subCategoryId'], $row['name'], $row['price'], $row['description'], $row['images'], $row['date'], $row['avaliableAmount'], $row['visible']); 
+	 	
+					//$prod->render();
+					// $id,	$categoryId, $subCategoryId, $name, $price,	 $description,	$images, $date,	$avaliableAmount,	 $visible
+					$prodArray[]=$prod;
+	 	 
+	 	 
+	 	 
+					$i++;
+				}
+			}
+
+			
+			
+		return $prodArray;
+		}
+		
+		
+	public function getOrder($id){
+	
+			//echo "<br>--".$id."<br>";
+			mysql_query("SET NAMES 'UTF8'");
+			$result = mysql_query("SELECT * 
+								FROM `Order` WHERE `Order`.`id` =".$id."; ");
+				
+			$row = mysql_fetch_assoc($result);
+			
+			
+			//echo $row['name'].'_______________________';
+			
+			$ord = new  Order();
+			$ord->addOrder($row['id'], $row['date'], $row['userName'], $row['userPhone'], $row['userAdress'], $row['workerId'], $row['cofirmStatusId'], $row['orderText']); 
+	 	 
+
+		return $ord;	  
+		
+		}
+		
+	public  function getOrdersByStr($str)
+	{
+		mysql_query("SET NAMES 'cp1251'");
+			//mysql_query("SET NAMES 'UTF8'");
+			$result = mysql_query($str);
+			$prodArray = array();
+				if(mysql_num_rows($result ) > 0){
+			while($row = mysql_fetch_assoc($result))
+				{
+				//echo "<br>++++".$row['id']."++";
+					$prod = new  Order();
+					$prod->addOrder($row['id'], $row['categoryId'], $row['subCategoryId'], $row['name'], $row['price'], $row['description'], $row['images'], $row['date'], $row['avaliableAmount'], $row['visible']); 
+	 	
+					//$prod->render();
+					// $id,	$categoryId, $subCategoryId, $name, $price,	 $description,	$images, $date,	$avaliableAmount,	 $visible
+					$prodArray[]=$prod;
+	 	 
+	 	 
+	 	 
+					//$i++;
+				}
+			}
+		return $prodArray;
+	}
+
+	
+	public  function deleteOrder($id)
+		{
+			/*echo "<script type='text/javascript'>";
+			 
+			echo "alert('delete');</script>";
+*/
+		
+		 $str = "DELETE FROM `general_shop`.`Orders` WHERE `Orders`.`id` = ".$id. "; ";
+		
+		  mysql_query($str);
+		  echo $str;
+		  
+		}
+		
+		
+		
+		/*public function insert(Category $cat)
+		{
+			mysql_query("INSERT INTO `General_Shop`.`adminaccount` (
+			`id` ,
+			`name` ,
+			`login` ,
+			`password`,
+			`email`)
+			VALUES (NULL, '". $cat->name ."', '". $cat->priority ." '); ");
+
+		}*/
+
+		public function edit($ord){
+		mysql_query("SET NAMES 'cp1251'");
+		
+		
+		$src ="UPDATE `general_shop`.`Orders` SET `userId` = '".$ord->userId."',
+											`date` = '".$ord->date."',
+											`state` = '".$ord->state."',
+											`comment` = '".$ord->comment."'
+											
+									  WHERE `Orders`.`id` =".$ord->id.";";
+ 
+ 		
+		mysql_query($src);
+
+		//echo 'EEEEEEEEEEEEEE '.$src;
+		}
+		
+		
+		//=========================ALINKA==================
+		public function changeOrderStatus($id, $status)
+		{
+		$str="UPDATE `innovate_wrdpress`.`Order` SET `cofirmStatusId` = '".$status."' WHERE `Order`.`id` = ".$id.";";
+		
+		mysql_query("SET NAMES 'utf8_general_ci'");
+		mysql_query($str);
+		
+		}
+		
+		public function addOrder(Order $ord)
+		{
+		/*$str = "INSERT INTO `general_shop`.`orders` (`id`, `userId`, `date`, `state`, `comment`) 
+                    VALUES (NULL, '".$ord->userId."', '".$ord->date ."', '".$ord->state."', '".$ord->comment."');";
+*/
+			$str = "INSERT INTO `innovate_wrdpress`.`Order` (`id`, `date`, `userName`, `userPhone`, `userAdress`, `workerId`, `cofirmStatusId`, `orderText`) 
+				VALUES (NULL, '".$ord->date." ', '".$ord->userName."', '".$ord->userPhone."', '".$ord->userAdress."', '".$ord->workerId."', '".$ord->cofirmStatusId."', '".$ord->orderText."');";
+		echo "add to orders";
+		
+		mysql_query("SET NAMES 'utf8_general_ci'");
+		mysql_query($str);
+
+		return true;
+		}
+		
+		public function getLastInsertOrder( )
+		{
+		//$str = "SELECT LAST_INSERT_ID() FROM Order;"; 
+
+		//$result = mysql_query($str);
+		//echo 'Last ID is '.mysql_insert_id();
+		//echo '=============='.$result;
+		//return $result;
+		return mysql_insert_id();
+
+		}
+};		
+?>
