@@ -9,63 +9,24 @@
 	<link rel="stylesheet" href="jquery.mobile.datepicker.theme.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="jsDatePick_ltr.min.css" />
 	
+	<script type="text/javascript" src="js/cordova-2.7.0.js"></script>
 	<script src="js/jquery-1.9.1.js"></script> 
 	<script src="js/jquery.mobile-1.3.1.js"></script>
 	<script type="text/javascript" src="jsDatePick.jquery.min.1.3.js"></script>
 	
-	<script>
-		jQuery( document ).ready(function( $ ) 
-		{
-	  		/*$( ".date-input-css" ).datepicker();*/
-	  		g_globalObject = new JsDatePick({
-			useMode:1,
-			isStripped:true,
-			target:"div3_example"});
-			 $( "p" ).text( "The DOM is now loaded and can be manipulated." );
-		});
+	<script> 
+		 $(document).ready(function (){
+			alert("");
+   			g_globalObject = new JsDatePick({useMode:1,	isStripped:true, target:"div3"});
+		});	
 	</script>
 	
-<!--	<script>
-		$(function(){
-			$( ".date-input-css" ).datepicker();
-			alert("onload");
-		})
-	</script>
-	-->
-	<script type="text/javascript">
-	$( document ).ready(function() 
-	{
-		alert("onload");
-		g_globalObject = new JsDatePick({
-			useMode:1,
-			isStripped:true,
-			target:"div3_example"
-		});
-		/*
-		g_globalObject.setOnSelectedDelegate(function(){
-			var obj = g_globalObject.getSelectedDay();
-			alert("a date was just selected and the date is : " + obj.day + "/" + obj.month + "/" + obj.year);
-			document.getElementById("div3_example_result").innerHTML = obj.day + "/" + obj.month + "/" + obj.year;
-		});	*/
-	};
-</script>
-
 </head>
 
 <body>
 <p>Not loaded yet.</p>
-<div id="div3_example" style="margin:10px 0 30px 0; border:dashed 1px red; width:205px; height:230px;">
-			
-	</div>
-<!--		
-<div data-role="page">
-	<div data-role="header">
-		<h1>Mobile Datepicker</h1>
+	<div id="div3" style="margin:10px 0 30px 0; border:dashed 1px red; width:205px; height:230px;">
 	</div>
 	
-	<div data-role="footer">
-		<h4>Footer</h4>
-	</div>
-</div> -->
 </body>
 </html>
