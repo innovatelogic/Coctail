@@ -26,40 +26,71 @@
 		<script type="text/javascript" src="gallery/js/klass.min.js"></script>
 		<script src="js/gallery.js"></script>
 		<script type="text/javascript" src="js/jsDatePick.jquery.full.1.3.js"></script>
-		Failed to execute 'send' on 'XMLHttpRequest': Failed to load
+		
 		<script type="text/javascript">
+		
+		var url = 'http://dev.innovatelogic.com/controller/test.php';
+
+				function doCallOtherDomain()
+				{
+					var XHR = window.XMLHttpRequest
+					var xhr = new XHR();
+					xhr.open('GET', url, true);
+
+					// замена onreadystatechange
+					// http://javascript.ru/ajax/cross-origin-2
+
+					xhr.onload = function() {
+						alert(xhr.responseText);
+					}
+					xhr.onerror = function() {
+						alert("Error")
+					}
+					xhr.send()
+				}
+					
+				function callOtherDomain() {
+					try {
+						doCallOtherDomain()
+					} catch (e) {
+						alert("В этом браузере данная фича не поддерживается.")
+					}
+				}
+				
 			function loadXMLDoc()
 			{
-				var xmlhttp;
-				
-				if (window.XMLHttpRequest)
-				{// код для IE7+, Firefox, Chrome, Opera, Safari
-				  xmlhttp = new XMLHttpRequest();
-				}
-				else
-				{// код для IE6, IE5
-				  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-				}
-				
-				xmlhttp.open("GET", "http://www.dev.innovatelogic.com/controller/test.php", true);
+				callOtherDomain();
 
-				xmlhttp.send(null);
-				alert("xmlhttp.send");
-				if ((xml.status >= 200 && xml.status <= 300) || xml.status == 304) {
-					var hi = xml.responseText;
-					document.getElementById("testdiv").innerHTML = hi;
-				} else {
-					alert("No Internet Connection! You will have to enter information by hand");
-				}
-				
-				alert(xmlhttp.responseText);
+	
+				/*$.support.cors = true;
+				$.ajax({
+				 type : "post",
+				 url: "http://dev.innovatelogic.com/controller/test.php",
+				 dataType: 'jsonp',
+				 success: function( data, status, xhr ) {
+				   alert( 'SUCCESS: ');
+				 },
+				 error: function( xhr, status, error ) {
+				   alert( 'ERROR: ');
+				 }
+				});
+			$.getJSON("http://dev.innovatelogic.com/controller/test.php", function() {
+					alert("success");
+						})
+						.done(function() { alert('getJSON request succeeded!'); })
+						.fail(function() { alert('getJSON request failed! '); })
+						.always(function() { alert('getJSON request ended!'); });*/
+				// тут другой код...
+				// другой метод, который запуститься после завершения запроса
+			
+				//jqxhr.complete(function() { alert( "second complete" );	}
 			}
 		</script>
 		
 		<script>
 			$(document).on('pageinit', '#order', function()
 			{
-			loadXMLDoc();
+				loadXMLDoc();
 			
 				//g_jsReservedDates = [[2014, 6, 28, 1], [2014, 6, 30, 2]];
 				g_globalObject = new JsDatePick({useMode:1,	isStripped:true, target:"div3", resDates:[[2014, 6, 28, 1], [2014, 6, 30, 2]]});
