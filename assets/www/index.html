@@ -46,28 +46,27 @@
 
 				xhr.onload = function() 
 				{
-				 if (xhr.readyState === 4) 
-				 {  
-						if (xhr.status === 200) {  
-						  alert("oXHR.responseText")  
+					if (xhr.readyState === 4) 
+					{  
+						if (xhr.status === 200) 
+						{  
+							var finarray = [];
+
+							alert(xhr.responseText);
+							var tmparray = xhr.responseText.split(",");
+							
+							for (var i = 0; i < tmparray.length; i++)
+							{
+								var subarray = tmparray[i].split("-");
+								alert(subarray);
+								finarray.push(subarray);
+							}
+
+							g_globalObject = new JsDatePick({useMode:1,	isStripped:true, target:"div3", resDates:finarray});
 						} else {  
 						   alert(xhr.statusText);  
 						}
-				 }
-		
-					var finarray = [];
-					
-					alert(xhr.responseText);
-					var tmparray = xhr.responseText.split(",");
-					
-					for (var i = 0; i < tmparray.length; i++)
-					{
-						var subarray = tmparray[i].split("-");
-						alert(subarray);
-						finarray.push(subarray);
 					}
-
-					g_globalObject = new JsDatePick({useMode:1,	isStripped:true, target:"div3", resDates:finarray});
 				}
 				xhr.onerror = function() {
 					alert("No internet connection");
