@@ -10,7 +10,7 @@
 	<!--	<link href="gallery/js/jquery-mobile.css" type="text/css" rel="stylesheet" />-->
 		<link href="css/jquery.mobile-1.4.3.css" rel="stylesheet" type="text/css"/>
 	<!--	<link href="gallery/photo.css" type="text/css" rel="stylesheet" />-->
-		<link rel="stylesheet" type="text/css" media="all" href="jsDatePick_ltr.min.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="jsDatePick_ltr.css" />
 		
 		<script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/mein-script.js"></script>
 		
@@ -83,30 +83,6 @@
 			function loadXMLDoc()
 			{
 				callOtherDomain();
-
-	/*
-				$.support.cors = true;
-				$.ajax({
-				 type : "get",
-				 url: "http://dev.innovatelogic.com/controller/test.php",
-				 dataType: 'jsonp',
-				 success: function( data, status, xhr ) {
-				   alert( 'SUCCESS: ');
-				 },
-				 error: function( xhr, status, error ) {
-				   alert( 'ERROR: ');
-				 }
-				});*/
-			/*$.getJSON("http://dev.innovatelogic.com/controller/test.php", function() {
-					alert("success");
-						})
-						.done(function() { alert('getJSON request succeeded!'); })
-						.fail(function() { alert('getJSON request failed! '); })
-						.always(function() { alert('getJSON request ended!'); });*/
-				// тут другой код...
-				// другой метод, который запуститься после завершения запроса
-			
-				//jqxhr.complete(function() { alert( "second complete" );	}*/
 			}
 		</script>
 		
@@ -166,7 +142,7 @@
 			</div>
 		</div>
 		<div data-role="content">
-			<div id="div3" style="margin:10px 0 30px 0; border:dashed 1px red; width=device-width; height:430px;">
+			<div id="div3" style="margin:10px 0 30px 0; border:dashed 1px red; width=device-width; height:330px;">
 			</div>
 		</div>
 		<div data-role="footer" data-position="fixed">
