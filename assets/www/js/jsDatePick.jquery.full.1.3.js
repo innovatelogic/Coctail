@@ -691,7 +691,7 @@ JsDatePick.prototype.populateMainBox = function(aMainBox)
 		
 		aDayDiv.setAttribute("globalNumber",this.globalNumber);
 		
-		aDayDiv.style.borderRight = aDayDiv.style.borderLeft = aDayDiv.style.borderTop = aDayDiv.style.borderBottom = "#ff0000 1px solid";
+		//aDayDiv.style.borderRight = aDayDiv.style.borderLeft = aDayDiv.style.borderTop = aDayDiv.style.borderBottom = "#ff0000 1px solid";
 		
 		if (columnNumber == 7)
 		{
@@ -831,8 +831,10 @@ JsDatePick.prototype.populateMainBox = function(aMainBox)
 				{
 					this.setC(aDayDiv, "dayDisabled");
 					
-					aDayDiv.style.backgroundColor = this.getDayColorTooday(oDay);
-					aDayDiv.style.border = "1px solid red";
+					//aDayDiv.style.backgroundColor = this.getDayColorTooday(oDay);
+					//aDayDiv.style.border = "1px solid red";
+					
+					DayDiv.style.backgroundColor = "#000000";
 				} 
 				else
 				{
@@ -846,7 +848,8 @@ JsDatePick.prototype.populateMainBox = function(aMainBox)
 				if (disabledDayFlag)
 				{
 					this.setC(aDayDiv, "dayDisabled");
-					aDayDiv.style.background = "url(" + this.oConfiguration.imgPath + this.oConfiguration.cellColorScheme + "_dayNormal.gif) left top no-repeat";
+					//aDayDiv.style.background = "url(" + this.oConfiguration.imgPath + this.oConfiguration.cellColorScheme + "_dayNormal.gif) left top no-repeat";
+					DayDiv.style.backgroundColor = "#000000";
 				}
 				else 
 				{
