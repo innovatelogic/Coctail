@@ -58,7 +58,15 @@
 								finarray.push(subarray);
 							}
 
-							g_globalObject = new JsDatePick({useMode:1,	isStripped:true, target:"div3", resDates:finarray});
+							g_globalObject = new JsDatePick({useMode:1,	isStripped:true, target:"div3", limitToToday:false, resDates:finarray});
+							
+							g_globalObject.setOnSelectedDelegate(function()
+							{
+								var obj = g_globalObject.getSelectedDay();
+								alert("a date was just selected and the date is : " + obj.day + "/" + obj.month + "/" + obj.year);
+								//document.getElementById("div3_example_result").innerHTML = obj.day + "/" + obj.month + "/" + obj.year;
+							});
+		
 						} else {  
 						   alert(xhr.statusText);  
 						}
@@ -84,6 +92,8 @@
 			{
 				callOtherDomain();
 			}
+			
+			
 		</script>
 		
 		<script>
