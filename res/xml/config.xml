@@ -16,7 +16,11 @@
     <feature name="http://api.phonegap.com/1.0/device" />
     
     <content src="index.html" />
+    
     <access origin="*" />
+    
     <preference name="fullscreen" value="false" />
     <preference name="webviewbounce" value="true" />
+    <preference name="splashscreen" value="img/logo1.png" />
+    <preference name="backgroundColor" value="0xFFF" />
 </widget>

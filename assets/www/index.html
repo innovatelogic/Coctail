@@ -12,7 +12,7 @@
 	<!--	<link href="gallery/photo.css" type="text/css" rel="stylesheet" />-->
 		<link rel="stylesheet" type="text/css" media="all" href="jsDatePick_ltr.css" />
 		
-		<script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/mein-script.js"></script>
+	<!--	<script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/mein-script.js"></script> -->
 		
 		<!-- <script type="text/javascript" src="js/cordova-2.7.0.js"></script> -->
 		<script src="js/jquery-1.9.1.js"></script> 
@@ -54,7 +54,6 @@
 							for (var i = 0; i < tmparray.length; i++)
 							{
 								var subarray = tmparray[i].split("-");
-								//alert(subarray);
 								finarray.push(subarray);
 							}
 
@@ -63,8 +62,10 @@
 							g_globalObject.setOnSelectedDelegate(function()
 							{
 								var obj = g_globalObject.getSelectedDay();
-								alert("a date was just selected and the date is : " + obj.day + "/" + obj.month + "/" + obj.year);
+								//alert("a date was just selected and the date is : " + obj.day + "/" + obj.month + "/" + obj.year);
 								//document.getElementById("div3_example_result").innerHTML = obj.day + "/" + obj.month + "/" + obj.year;
+								
+								 window.location.href = "anfrage.html" + "?date=" + obj.day + "-" + obj.month + "-" + obj.year;
 							});
 		
 						} else {  
@@ -93,15 +94,9 @@
 				callOtherDomain();
 			}
 			
-			
-		</script>
-		
-		<script>
 			$(document).on('pageinit', '#order', function()
 			{
 				loadXMLDoc();
-			
-				//g_jsReservedDates = [[2014, 6, 28, 1], [2014, 6, 30, 2]];
 			});
 		</script>
 	</head>
@@ -127,10 +122,9 @@
             <div data-role="navbar" >
                <ul >
                   <li><a href="#aboutus">&Uuml;ber Uns</a></li>
-                  <li><a href="#cocktails" >Cocktails</a></li>
+                  <li><a href="#cocktails">Cocktails</a></li>
                   <li><a href="#gallery">Gallery</a></li>
-                  <li><a href="#kontakt" >Kontakt</a></li>
-                  <li><a href="anfrage.html" >Anfrage</a></li>
+                  <li><a href="#kontakt">Kontakt</a></li>
                </ul>
             </div>
          </div>
@@ -159,15 +153,13 @@
 			<div data-role="navbar" >
 				<ul >
 					<li><a href="#aboutus">&Uuml;ber Uns</a></li>
-					<li><a href="#cocktails" >Cocktails</a></li>
+					<li><a href="#cocktails">Cocktails</a></li>
 					<li><a href="#gallery">Gallery</a></li>
-					<li><a href="#kontakt" >Kontakt</a></li>
-					<li><a href="#order" >Order</a></li>
+					<li><a href="#kontakt">Kontakt</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-		
 		
 <!--About us-->
 	<div id="aboutus" data-role="page">
@@ -206,7 +198,6 @@
                      <li><a href="#cocktails" >Cocktails</a></li>
                      <li><a href="#gallery">Gallery</a></li>
                      <li><a href="#kontakt" >Kontakt</a></li>
-                     <li><a href="anfrage.html" >Anfrage</a></li>
                   </ul>
                </div>
             </div>
@@ -265,10 +256,9 @@
             <div data-role="navbar" >
                <ul >
                   <li><a href="#aboutus">&Uuml;ber Uns</a></li>
-                  <li><a href="#cocktails" >Cocktails</a></li>
+                  <li><a href="#cocktails">Cocktails</a></li>
                   <li><a href="#gallery">Gallery</a></li>
-                  <li><a href="#kontakt" >Kontakt</a></li>
-                  <li><a href="anfrage.html" >Anfrage</a></li>
+                  <li><a href="#kontakt">Kontakt</a></li>
                </ul>
             </div>
          </div>
@@ -306,10 +296,9 @@
             <div data-role="navbar" >
                <ul >
                   <li><a href="#aboutus">&Uuml;ber Uns</a></li>
-                  <li><a href="#cocktails" >Cocktails</a></li>
+                  <li><a href="#cocktails">Cocktails</a></li>
                   <li><a href="#gallery">Gallery</a></li>
-                  <li><a href="#kontakt" >Kontakt</a></li>
-                  <li><a href="anfrage.html" >Anfrage</a></li>
+                  <li><a href="#kontakt">Kontakt</a></li>
                </ul>
             </div>
          </div>
@@ -357,10 +346,9 @@
             <div data-role="navbar" >
                <ul >
                   <li><a href="#aboutus">&Uuml;ber Uns</a></li>
-                  <li><a href="#cocktails" >Cocktails</a></li>
+                  <li><a href="#cocktails">Cocktails</a></li>
                   <li><a href="#gallery">Gallery</a></li>
-                  <li><a href="#kontakt" >Kontakt</a></li>
-                  <li><a href="anfrage.html" >Anfrage</a></li>
+                  <li><a href="#kontakt">Kontakt</a></li>
                </ul>
             </div>
          </div>

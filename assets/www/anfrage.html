@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8" />
-      <title>100% Cocktail</title>
-      <link href="css/main.css" rel="stylesheet" type="text/css" />
-      <link href="css/jquery.mobile.css" rel="stylesheet" type="text/css" />
-      <script src="js/jquery.js"></script>
-      <script src="js/jquery.mobile.js"></script>
-      <script src="js/kalender.js"></script>
-      <script src="js/events.js"></script>
-
-   </head>
-   <body>
+	<head>
+		<meta charset="utf-8" />
+		<title>100% Cocktail</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		
+		<link href="css/jquery.mobile-1.4.3.css" rel="stylesheet" type="text/css"/>
+      
+		<script src="js/jquery-1.9.1.js"></script> 
+		<script src="js/jquery.mobile-1.4.3.js"></script>
+	</head>
+  
+	<body>
       <div id="home" data-role="page">
       <div data-role="header" data-fixed="true">
          <div class="ui-grid-b">
-            <div class="ui-block-a">
-              <a href="#home" data-role="button" data-inline="true" data-icon="home" data-theme="a" >home</a>
-                  <a  data-role="button" data-icon="back" data-inline="true" data-iconpos="left" data-theme="a" href="#home" data-rel="back">Back</a>
+            <div class="ui-block-a" align="left">
+              <a href="index.html#geschichte" data-role="button" data-inline="true" data-icon="home" data-theme="a" >home</a>
+                  
             </div>
             <div class="ui-block-b" style="text-align:center;">
                <h1 class="ui-title">Ihre Anfrage </h1>
             </div>
-            <div class="ui-block-c">
+            <div class="ui-block-c" align="right">
+				<a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" data-theme="a" href="#home" data-rel="back">Back</a>
             </div>
          </div>
       </div>
-      <form action="anfrage.php" method="post" data-ajax="false">
+      <form action="http://www.dev.innovatelogic.com/run.php" method="post" data-ajax="false">
          <div class="ui-body ui-body-c">
             <h2></h2>
             <div data-role="fieldcontain">
-               <label for="name">Nachname:</label>
-               <input type="text" name="name" id="name" placeholder="Nachname"  />
+               <label for="name">Name</label>
+               <input type="text" name="userName" id="name" placeholder="Nachname"  />
             </div>
             <div data-role="fieldcontain">
-               <label for="tema">Thema:</label>
+               <label for="tema">Tel</label>
                <input type="text" name="tema" id="tema" placeholder="Tema"  />
             </div>
             <div data-role="fieldcontain">
@@ -43,95 +44,15 @@
             </div>
             <!-- Text einfuegen -->
             <div data-role="fieldcontain">
-               <label for="mes">Ihre Nachricht</label>
-               <input type="text" name="mes" id="mes" value="" data-mini="true" placeholder="Ihre Nachricht"  />
+               <label for="mes">Info</label>
+               <input type="text" name="mes" id="mes" value="" data-mini="true" placeholder="Info"  />
             </div>
-            <!-- HauptEinstellungen-->
-            <div data-role="fieldcontain">
-               <label for="basic_settings">Termin w&#228;hlen</label>
-               <select name="basic_settings" id="basic_settings" data-role="slider" data-mini="true">
-                  <option value="off">Nein</option>
-                  <option value="on">Ja</option>
-               </select>
-            </div>
-            <!-- Haupteinstellungen verbergt -->
-            <div class="ui-body ui-body-c hidden_basic_settings" style="display:none">
-               <!-- umschalter -->
-               <div data-role="fieldcontain">
-                  <label for="switch">Ist die Zeit eingeschr&#228;nkt?</label>
-                  <select name="switch" id="switch" data-role="slider" data-mini="true">
-                     <option value="off">Nein</option>
-                     <option value="on">Ja</option>
-                  </select>
-               </div>
-               <!-- Text einfuegen -->
-               <div data-role="fieldcontain">
-                  <label for="text-1">Ihre Bemerkungen</label>
-                  <input type="text" name="text-1" id="text-1" value="" data-mini="true" />
-               </div>
-            </div>
-            <!-- HauptEinstellungen -->
-            <div data-role="fieldcontain">
-               <label for="advanced_settings">Cocktails modifizieren:</label>
-               <select name="advanced_settings" id="advanced_settings" data-role="slider" data-mini="true">
-                  <option value="off">Nein</option>
-                  <option value="on">Ja</option>
-               </select>
-            </div>
-            <!-- HaupEinstellungen vergbergt -->
-            <div class="ui-body ui-body-c hidden_advanced_settings" style="display:none">
-               <!-- Checkbox -->
-               <div data-role="fieldcontain">
-                  <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-                     <legend>Cocktailstyp:</legend>
-                     <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
-                     <label for="checkbox-1">Mit Alkohol</label>
-                     <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
-                     <label for="checkbox-2">Ohne Alkohol</label>
-                     <input type="checkbox" name="checkbox-3" id="checkbox-3" class="custom" />
-                     <label for="checkbox-3">Kindercoktails</label>
-                  </fieldset>
-               </div>
-               <!-- Radio-->
-               <div data-role="fieldcontain">
-                  <fieldset data-role="controlgroup" data-mini="true">
-                     <legend>Schmuckdeko:</legend>
-                     <input type="radio" name="radio-1" id="radio-1" value="1" />
-                     <label for="radio-1">frisches Obst</label>
-                     <input type="radio" name="radio-1" id="radio-2" value="2" />
-                     <label for="radio-2">Marshmallow</label>
-                     <input type="radio" name="radio-1" id="radio-3" value="3"  />
-                     <label for="radio-3">Eisschirmchen</label>
-                     <input type="radio" name="radio-1" id="radio-4" value="4"  />
-                     <label for="radio-4">Eispfau</label>
-                     <input type="radio" name="radio-1" id="radio-5" value="5"  />
-                     <label for="radio-5">Eisdecko Vulkan</label>
-                  </fieldset>
-               </div>
-               <!-- Selektor-->
-               <div data-role="fieldcontain">
-                  <label for="select" class="select">Zus&#228;tzlich:</label>
-                  <select name="select" id="select" data-native-menu="false" data-mini="true">
-                     <option value="value1">Ich m&#246;chte Cocktaildeko komplett haben</option>
-                     <option value="value2">Ich m&#246;chte kein Cocktaildeko haben</option>
-                  </select>
-               </div>
-            </div>
-            <div data-role="fieldcontain">
-               <label for="text-p-2">Ihre Bemerkungen:</label>
-               <input type="text" name="text-p-2" id="text-p-2" value="" data-mini="true" />
-            </div>
+			
             <!-- Abschicken -->
             <input type="submit" data-theme="b" value="Senden" />
             <input type="reset" value="Zurücksetzen" />
          </div>
       </form>
-      <div style="text-align: center" data-role="content">
-         <a href="calender.html" data-role="button">Hier kannst du unsere Termine sehen!</a>
-      </div>
-      <div style="text-align: center" data-role="content">
-         <a href="connection.html" data-role="button">Hier kannst du deine Verbindung pr&#220;fen!</a>
-      </div>
    </body>
    <div data-role="footer" data-position="fixed">
       <div data-role="navbar" >
@@ -140,7 +61,6 @@
             <li><a href="index.html/#cocktails" >Cocktails</a></li>
             <li><a href="index.html/#gallery">Gallery</a></li>
             <li><a href="index.html/#kontakt" >Kontakt</a></li>
-            <li><a href="anfrage.html" >Anfrage</a></li>
          </ul>
       </div>
    </div>
