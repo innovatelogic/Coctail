@@ -12,48 +12,51 @@
 	</head>
   
 	<body>
-      <div id="home" data-role="page">
-      <div data-role="header" data-fixed="true">
-         <div class="ui-grid-b">
-            <div class="ui-block-a" align="left">
-              <a href="index.html#geschichte" data-role="button" data-inline="true" data-icon="home" data-theme="a" >home</a>
-                  
-            </div>
-            <div class="ui-block-b" style="text-align:center;">
-               <h1 class="ui-title">Ihre Anfrage </h1>
-            </div>
-            <div class="ui-block-c" align="right">
-				<a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" data-theme="a" href="#home" data-rel="back">Back</a>
-            </div>
-         </div>
-      </div>
-      <form action="http://www.dev.innovatelogic.com/run.php" method="post" data-ajax="false">
-         <div class="ui-body ui-body-c">
-            <h2></h2>
-            <div data-role="fieldcontain">
-               <label for="name">Name</label>
-               <input type="text" name="userName" id="name" placeholder="Nachname"  />
-            </div>
-            <div data-role="fieldcontain">
-               <label for="tema">Tel</label>
-               <input type="text" name="tema" id="tema" placeholder="Tema"  />
-            </div>
-            <div data-role="fieldcontain">
-               <label for="email">Email-Adresse:</label>
-               <input type="text" name="email" id="email" placeholder="E-Mail"  />
-            </div>
-            <!-- Text einfuegen -->
-            <div data-role="fieldcontain">
-               <label for="mes">Info</label>
-               <input type="text" name="mes" id="mes" value="" data-mini="true" placeholder="Info"  />
-            </div>
-			
-            <!-- Abschicken -->
-            <input type="submit" data-theme="b" value="Senden" />
-            <input type="reset" value="Zurücksetzen" />
-         </div>
-      </form>
-   </body>
+		<div id="home" data-role="page">
+		<div data-role="header" data-fixed="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a" align="left">
+					<a href="index.html" data-role="button" id="verify" data-inline="true" data-icon="home" data-theme="a" onclick="doSomething(); return false" rel="external">home</a>
+				</div>
+				<div class="ui-block-b" style="text-align:center;">
+					<h1 class="ui-title">Ihre Anfrage </h1>
+				</div>
+				<div class="ui-block-c" align="right">
+					<a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" data-theme="a" href="#home" data-rel="back">Back</a>
+				</div>
+			</div>
+		</div>
+	  
+		<div id="landmark-1" data-landmark-id="1">
+			<form>
+				<div class="ui-body ui-body-c">
+					<h2></h2>
+					<div data-role="fieldcontain">
+					   <label for="name">Name</label>
+					   <input type="text" name="userName" id="name" placeholder="Nachname"  />
+					</div>
+					<div data-role="fieldcontain">
+					   <label for="tema">Tel</label>
+					   <input type="text" name="tema" id="tema" placeholder="Tema"  />
+					</div>
+					<div data-role="fieldcontain">
+					   <label for="email">Email-Adresse:</label>
+					   <input type="text" name="email" id="email" placeholder="E-Mail"  />
+					</div>
+					<!-- Text einfuegen -->
+					<div data-role="fieldcontain">
+					   <label for="mes">Info</label>
+					   <input type="text" name="mes" id="mes" value="" data-mini="true" placeholder="Info"  />
+					</div>
+					
+					<!-- Abschicken -->
+					<input type="submit" data-theme="b" value="Senden" />
+					<input type="reset" value="Zurücksetzen" />
+				</div>
+			</form>
+		</div>
+	</body>
+
    <div data-role="footer" data-position="fixed">
       <div data-role="navbar" >
          <ul >
@@ -65,22 +68,73 @@
       </div>
    </div>
    <script type="text/javascript">
-      $(document).ready(function() {
-          $('#basic_settings').change(function(event, ui) {
-                  if ($(this).attr('value') == 'on') {
-                      $('.hidden_basic_settings').slideDown(500);
-                      } else {
-                          $('.hidden_basic_settings').slideUp(500);
-                          }
-                          });
-          $('#advanced_settings').change(function(event, ui) {
-              if ($(this).attr('value') == 'on') {
-                  $('.hidden_advanced_settings').slideDown(500);
-                  } else {
-                      $('.hidden_advanced_settings').slideUp(500);
-                      }
-                      });
-          });
       
+		function doCallOtherDomain()
+		{
+			$.support.cors = true;
+			$.mobile.allowCrossDomainPages = true;
+		
+			var cDate = $.getUrlVar('date');
+	   
+			alert(cDate);
+   
+			var landmarkID = $(this).parent().attr('data-landmark-id');
+			var postData = $(this).serialize();
+			alert(postData);
+			
+			var xhr = new XMLHttpRequest();
+			xhr.open('POST', 'http://dev.innovatelogic.com/controller/addOrder.php', true);
+
+			xhr.onload = function() 
+			{
+				if (xhr.readyState === 4) 
+				{  
+					if (xhr.status === 200) 
+					{  
+						// alert('successful added');
+						window.location.href = "index.html";
+					} else {  
+					   alert(xhr.statusText);  
+					}
+				}
+			}
+			xhr.onerror = function() {
+				alert("No internet connection");
+			}
+			xhr.send(postData + '&date=' + cDate);
+		}
+		
+		//----------------------------------------------------------------------------------------------
+		$('form').submit(function(e)
+		{
+			doCallOtherDomain();
+		});
+		
+		//----------------------------------------------------------------------------------------------
+		$("#verify").click(function (e) 
+		{
+			e.stopImmediatePropagation();
+			e.preventDefault();
+			
+			window.location.href = "index.html";
+		});
+
+		//----------------------------------------------------------------------------------------------
+		$.extend({
+			getUrlVars: function(){
+			var vars = [], hash;
+			var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+				for(var i = 0; i < hashes.length; i++)
+				{
+				  hash = hashes[i].split('=');
+				  vars.push(hash[0]);
+				  vars[hash[0]] = hash[1];
+				}
+				return vars;
+				},
+				getUrlVar: function(name){
+					return $.getUrlVars()[name];
+				}
+			});
    </script>
 </html>
