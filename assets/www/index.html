@@ -30,9 +30,10 @@
 		<script type="text/javascript">
 
 			var url = 'http://dev.innovatelogic.com/controller/viewDates.php';
+			var url_time = "http://dev.innovatelogic.com/controller/getDate.php";
 			
 			//----------------------------------------------------------------------------------------------
-			function doCallOtherDomain_getOrder()
+			function doCallOtherDomain_getOrder(time)
 			{
 				$.support.cors = true;
 				$.mobile.allowCrossDomainPages = true;
@@ -57,7 +58,13 @@
 								finarray.push(subarray);
 							}
 
-							g_globalObject = new JsDatePick({useMode:1,	isStripped:true, target:"div3", limitToToday:false, resDates:finarray});
+							alert(time);
+							g_globalObject = new JsDatePick({useMode:1,
+															 isStripped:true, target:"div3",
+															 limitToToday:false, 
+															 curDate:time,
+															 yearsRange:[2013,2016],
+															 resDates:finarray});
 							
 							g_globalObject.setOnSelectedDelegate(function()
 							{
@@ -77,9 +84,57 @@
 			}
 			
 			//----------------------------------------------------------------------------------------------
-			function callOtherDomain_getOrder() {
+			function callOtherDomain_getOrder(time) {
 				try {
-					doCallOtherDomain_getOrder()
+					doCallOtherDomain_getOrder(time)
+				} catch (e) {
+					alert("not supported")
+				}
+			}
+			
+			//----------------------------------------------------------------------------------------------
+			function doCallOtherDomain_getTime()
+			{
+				$.support.cors = true;
+				$.mobile.allowCrossDomainPages = true;
+
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', url_time, true);
+
+				xhr.onload = function() 
+				{
+					if (xhr.readyState === 4) 
+					{  
+						if (xhr.status === 200) 
+						{  
+							var finarray = [];
+
+							alert(xhr.responseText);
+							finarray = xhr.responseText.split("-");
+							
+							if (finarray.length == 3) // check array length as valid time
+							{
+								callOtherDomain_getOrder(finarray);
+							}
+							else
+							{
+								alert("no valid server responce");
+							}
+						} else {  
+						   alert(xhr.statusText);  
+						}
+					}
+				}
+				xhr.onerror = function() {
+					alert("No internet connection");
+				}
+				xhr.send();
+			}
+			
+			//----------------------------------------------------------------------------------------------
+			function callOtherDomain_getTime() {
+				try {
+					doCallOtherDomain_getTime()
 				} catch (e) {
 					alert("not supported")
 				}
@@ -88,7 +143,7 @@
 			//----------------------------------------------------------------------------------------------
 			function loadXMLDoc()
 			{
-				callOtherDomain_getOrder();
+				callOtherDomain_getTime();
 			}
 			
 			//----------------------------------------------------------------------------------------------
