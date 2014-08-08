@@ -71,16 +71,21 @@
       
 		function doCallOtherDomain()
 		{
+			// todo
+		}
+		
+		//----------------------------------------------------------------------------------------------
+		$('form').submit(function(e)
+		{
 			$.support.cors = true;
 			$.mobile.allowCrossDomainPages = true;
 		
 			var cDate = $.getUrlVar('date');
-	   
 			//alert(cDate);
    
 			var landmarkID = $(this).parent().attr('data-landmark-id');
 			var postData = $(this).serialize();
-			//alert(postData);
+			alert(postData);
 			
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET', 'http://dev.innovatelogic.com/controller/addOrder.php?' + postData + '&date=' + cDate, true);
@@ -102,12 +107,6 @@
 			xhr.onerror = function() {
 				alert("No internet connection");
 			}
-		}
-		
-		//----------------------------------------------------------------------------------------------
-		$('form').submit(function(e)
-		{
-			doCallOtherDomain();
 		});
 		
 		//----------------------------------------------------------------------------------------------

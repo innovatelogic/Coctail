@@ -32,7 +32,7 @@
 			var url = 'http://dev.innovatelogic.com/controller/viewDates.php';
 			
 			//----------------------------------------------------------------------------------------------
-			function doCallOtherDomain()
+			function doCallOtherDomain_getOrder()
 			{
 				$.support.cors = true;
 				$.mobile.allowCrossDomainPages = true;
@@ -48,7 +48,7 @@
 						{  
 							var finarray = [];
 
-							//alert(xhr.responseText);
+							alert(xhr.responseText);
 							var tmparray = xhr.responseText.split(",");
 							
 							for (var i = 0; i < tmparray.length; i++)
@@ -77,9 +77,9 @@
 			}
 			
 			//----------------------------------------------------------------------------------------------
-			function callOtherDomain() {
+			function callOtherDomain_getOrder() {
 				try {
-					doCallOtherDomain()
+					doCallOtherDomain_getOrder()
 				} catch (e) {
 					alert("not supported")
 				}
@@ -88,7 +88,7 @@
 			//----------------------------------------------------------------------------------------------
 			function loadXMLDoc()
 			{
-				callOtherDomain();
+				callOtherDomain_getOrder();
 			}
 			
 			//----------------------------------------------------------------------------------------------
