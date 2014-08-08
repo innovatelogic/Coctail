@@ -76,15 +76,16 @@
 		
 			var cDate = $.getUrlVar('date');
 	   
-			alert(cDate);
+			//alert(cDate);
    
 			var landmarkID = $(this).parent().attr('data-landmark-id');
 			var postData = $(this).serialize();
-			alert(postData);
+			//alert(postData);
 			
 			var xhr = new XMLHttpRequest();
-			xhr.open('POST', 'http://dev.innovatelogic.com/controller/addOrder.php', true);
-
+			xhr.open('GET', 'http://dev.innovatelogic.com/controller/addOrder.php?' + postData + '&date=' + cDate, true);
+			xhr.send(null);
+			
 			xhr.onload = function() 
 			{
 				if (xhr.readyState === 4) 
@@ -101,7 +102,6 @@
 			xhr.onerror = function() {
 				alert("No internet connection");
 			}
-			xhr.send(postData + '&date=' + cDate);
 		}
 		
 		//----------------------------------------------------------------------------------------------

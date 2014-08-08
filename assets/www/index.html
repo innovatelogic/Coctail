@@ -62,10 +62,7 @@
 							g_globalObject.setOnSelectedDelegate(function()
 							{
 								var obj = g_globalObject.getSelectedDay();
-								//alert("a date was just selected and the date is : " + obj.day + "/" + obj.month + "/" + obj.year);
-								//document.getElementById("div3_example_result").innerHTML = obj.day + "/" + obj.month + "/" + obj.year;
-								
-								 window.location.href = "anfrage.html" + "?date=" + obj.day + "-" + obj.month + "-" + obj.year;
+								window.location.href = "anfrage.html" + "?date=" + obj.day + "-" + obj.month + "-" + obj.year;
 							});
 		
 						} else {  
