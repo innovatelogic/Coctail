@@ -125,21 +125,14 @@ JsDatePick = function(configurationObject)
 	
 	this.oConfiguration = {};
 	
-	//alert("gtime");
+	this.oCurrentDay = g_currentDateObject;
+	
 	if (configurationObject["curDate"] != null)
 	{
-		//g_currentDateObject.day = (int)configurationObject["curDate"][2];
-		//g_currentDateObject.month = (int)configurationObject["curDate"][1];
-		//g_currentDateObject.year = (int)configurationObject["curDate"][0];
-
-		//alert(g_currentDateObject.dateObject.getDate());
-		//this.oCurrentDay.day = 8;//(int)configurationObject["curDate"][2];
-		//this.oCurrentDay.month = 8;//(int)configurationObject["curDate"][1];
-		//this.oCurrentDay.year = 2014;//(int)configurationObject["curDate"][0];
+		this.oCurrentDay.day = parseInt(configurationObject["curDate"][2]);
+		this.oCurrentDay.month = parseInt(configurationObject["curDate"][1]);
+		this.oCurrentDay.year = parseInt(configurationObject["curDate"][0]);
 	}
-
-	this.oCurrentDay = g_currentDateObject;
-
 	
 	this.monthsTextualRepresentation = g_l["MONTHS"];
 	

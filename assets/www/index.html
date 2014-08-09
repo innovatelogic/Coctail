@@ -49,7 +49,7 @@
 						{  
 							var finarray = [];
 
-							alert(xhr.responseText);
+							//alert(xhr.responseText);
 							var tmparray = xhr.responseText.split(",");
 							
 							for (var i = 0; i < tmparray.length; i++)
@@ -58,7 +58,6 @@
 								finarray.push(subarray);
 							}
 
-							alert(time);
 							g_globalObject = new JsDatePick({useMode:1,
 															 isStripped:true, target:"div3",
 															 limitToToday:false, 
@@ -109,7 +108,7 @@
 						{  
 							var finarray = [];
 
-							alert(xhr.responseText);
+							//alert(xhr.responseText);
 							finarray = xhr.responseText.split("-");
 							
 							if (finarray.length == 3) // check array length as valid time
