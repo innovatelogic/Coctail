@@ -129,9 +129,9 @@ JsDatePick = function(configurationObject)
 	
 	if (configurationObject["curDate"] != null)
 	{
-		this.oCurrentDay.day = parseInt(configurationObject["curDate"][2]);
-		this.oCurrentDay.month = parseInt(configurationObject["curDate"][1]);
-		this.oCurrentDay.year = parseInt(configurationObject["curDate"][0]);
+		this.oCurrentDay.day = parseInt(configurationObject["curDate"][2].replace(/^0+/, ''));
+		this.oCurrentDay.month = parseInt(configurationObject["curDate"][1].replace(/^0+/, ''));
+		this.oCurrentDay.year = parseInt(configurationObject["curDate"][0].replace(/^0+/, ''));
 	}
 	
 	this.monthsTextualRepresentation = g_l["MONTHS"];
