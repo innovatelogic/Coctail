@@ -1019,7 +1019,7 @@ JsDatePick.prototype.getDayCode = function(aDateObject)
 {
 	// array of buisy bays [[year, month, day, code], [year, month, day, code]]
 	// code 1 - reserved
-	// code 2 - occupied
+	// code 0 - free
 	// month range (0 -- 11)
 
 	for (var i = 0; i < this.reservedDates.length; i++)
@@ -1028,12 +1028,31 @@ JsDatePick.prototype.getDayCode = function(aDateObject)
 			aDateObject.getMonth() == this.reservedDates[i][1] &&
 			aDateObject.getFullYear() == this.reservedDates[i][0])
 		{
-			return this.reservedDates[i][3];
+			return 1;
 		}
 	}
 	return 0;
 };
 
+//----------------------------------------------------------------------------------------------
+JsDatePick.prototype.getDayCode_ddmmyy = function(day, month, year)
+{
+	// array of buisy bays [[year, month, day, code], [year, month, day, code]]
+	// code 1 - reserved
+	// code 0 - free
+	// month range (0 -- 11)
+
+	for (var i = 0; i < this.reservedDates.length; i++)
+	{
+		if (day == this.reservedDates[i][2] &&
+			month == this.reservedDates[i][1] &&
+			year == this.reservedDates[i][0])
+		{
+			return 1;
+		}
+	}
+	return 0;
+};
 //----------------------------------------------------------------------------------------------
 JsDatePick.prototype.getDayColor = function(aDateObject)
 {

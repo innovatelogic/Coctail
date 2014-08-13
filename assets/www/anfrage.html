@@ -4,9 +4,7 @@
 		<meta charset="utf-8" />
 		<title>100% Cocktail</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		
 		<link href="css/jquery.mobile-1.4.3.css" rel="stylesheet" type="text/css"/>
-      
 		<script src="js/jquery-1.9.1.js"></script> 
 		<script src="js/jquery.mobile-1.4.3.js"></script>
 	</head>
@@ -16,7 +14,7 @@
 		<div data-role="header" data-fixed="true">
 			<div class="ui-grid-b">
 				<div class="ui-block-a" align="left">
-					<a href="index.html" data-role="button" id="verify" data-inline="true" data-icon="home" data-theme="a" onclick="doSomething(); return false" rel="external">home</a>
+					<a href="index.html" data-role="button" id="home" data-inline="true" data-icon="home" data-theme="a" onclick="doSomething(); return false" rel="external">home</a>
 				</div>
 				<div class="ui-block-b" style="text-align:center;">
 					<h1 class="ui-title">Ihre Anfrage </h1>
@@ -30,7 +28,8 @@
 		<div id="landmark-1" data-landmark-id="1">
 			<form>
 				<div class="ui-body ui-body-c">
-					<h2></h2>
+					<h3 name="selectedTime" id="selectedTime">Time</h3>
+					
 					<div data-role="fieldcontain">
 					   <label for="name">Name</label>
 					   <input type="text" name="userName" id="name" placeholder="Nachname"  />
@@ -68,15 +67,49 @@
       </div>
    </div>
    <script type="text/javascript">
-      
-		function doCallOtherDomain()
+   
+		$(document).ready(function() 
 		{
-			// todo
+			var cDate = $.getUrlVar('date');
+			//alert(cDate);
+			document.getElementsByName('selectedTime')[0].innerHTML = "Selected date: " + cDate;
+		});
+		
+		//----------------------------------------------------------------------------------------------
+		function isEmpty(str) {
+			return (!str || 0 === str.length);
 		}
 		
 		//----------------------------------------------------------------------------------------------
+		String.prototype.isEmpty = function() {
+			return (this.length === 0 || !this.trim());
+		};
+
+		//----------------------------------------------------------------------------------------------
 		$('form').submit(function(e)
 		{
+			// check data valid before send
+			var userName = document.getElementsByName('userName')[0].value;
+			if (isEmpty(userName) ||  userName.isEmpty())
+			{
+				alert("Please enter valid name");
+				return;
+			}
+			
+			var userTel = document.getElementsByName('tema')[0].value;
+			if (isEmpty(userTel) ||  userTel.isEmpty())
+			{
+				alert("Please enter valid telephone number");
+				return;
+			}
+			
+			var userEmail = document.getElementsByName('email')[0].value;
+			if (isEmpty(userEmail) ||  userEmail.isEmpty())
+			{
+				alert("Please enter valid email");
+				return;
+			}
+			
 			$.support.cors = true;
 			$.mobile.allowCrossDomainPages = true;
 		
@@ -110,7 +143,7 @@
 		});
 		
 		//----------------------------------------------------------------------------------------------
-		$("#verify").click(function (e) 
+		$("#home").click(function (e) 
 		{
 			e.stopImmediatePropagation();
 			e.preventDefault();

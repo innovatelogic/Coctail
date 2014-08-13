@@ -6,10 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<!--	<link href="gallery/js/jquery-mobile.css" type="text/css" rel="stylesheet" />-->
 		<link href="css/jquery.mobile-1.4.3.css" rel="stylesheet" type="text/css"/>
-	<!--	<link href="gallery/photo.css" type="text/css" rel="stylesheet" />-->
 		<link rel="stylesheet" type="text/css" media="all" href="jsDatePick_ltr.css" />
 		
 	<style type="text/css">
@@ -135,8 +132,24 @@
 							
 							g_globalObject.setOnSelectedDelegate(function()
 							{
-								var obj = g_globalObject.getSelectedDay();
-								window.location.href = "anfrage.html" + "?date=" + obj.day + "-" + (obj.month - 1) + "-" + obj.year;
+								var selectedDate = g_globalObject.getSelectedDay();
+								
+								if (selectedDate.year < g_globalObject.oCurrentDay.year ||
+									selectedDate.month < g_globalObject.oCurrentDay.month ||
+									selectedDate.day < g_globalObject.oCurrentDay.day)
+								{
+									alert("Select valid date");
+									return;
+								}
+								
+								var dayCode = g_globalObject.getDayCode_ddmmyy(selectedDate.day, (selectedDate.month - 1), selectedDate.year);
+								if (dayCode != 0)
+								{
+									alert("Sorry this date preordered yet, try to select another day");
+									return;
+								}
+								
+								window.location.href = "anfrage.html" + "?date=" + selectedDate.day + "-" + (selectedDate.month - 1) + "-" + selectedDate.year; // convert month to valid format
 							});
 		
 						} else {  
@@ -147,7 +160,6 @@
 				xhr.onerror = function() {
 					alert("No internet connection");
 				}
-				
 			}
 			
 			//----------------------------------------------------------------------------------------------
@@ -177,7 +189,7 @@
 						{  
 							var finarray = [];
 
-							alert(xhr.responseText);
+							//alert(xhr.responseText);
 							finarray = xhr.responseText.split("-");
 							
 							if (finarray.length == 3) // check array length as valid time
