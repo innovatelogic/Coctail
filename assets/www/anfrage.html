@@ -10,7 +10,7 @@
 	</head>
   
 	<body>
-		<div id="home" data-role="page">
+		<div id="anfage_home" data-role="page">
 		<div data-role="header" data-fixed="true">
 			<div class="ui-grid-b">
 				<div class="ui-block-a" align="left">
@@ -50,7 +50,6 @@
 					
 					<!-- Abschicken -->
 					<input type="submit" data-theme="b" value="Senden" />
-					<input type="reset" value="Zurücksetzen" />
 				</div>
 			</form>
 		</div>
@@ -93,21 +92,21 @@
 			if (isEmpty(userName) ||  userName.isEmpty())
 			{
 				alert("Please enter valid name");
-				return;
+				return false;
 			}
 			
 			var userTel = document.getElementsByName('tema')[0].value;
 			if (isEmpty(userTel) ||  userTel.isEmpty())
 			{
 				alert("Please enter valid telephone number");
-				return;
+				return false;
 			}
 			
 			var userEmail = document.getElementsByName('email')[0].value;
 			if (isEmpty(userEmail) ||  userEmail.isEmpty())
 			{
 				alert("Please enter valid email");
-				return;
+				return false;
 			}
 			
 			$.support.cors = true;
