@@ -10,17 +10,17 @@
 	</head>
   
 	<body>
-		<div id="anfage_home" data-role="page">
+		<div id="anfage_home" data-role="page" data-theme="b">
 		<div data-role="header" data-fixed="true">
 			<div class="ui-grid-b">
 				<div class="ui-block-a" align="left">
-					<a href="index.html" data-role="button" id="home" data-inline="true" data-icon="home" data-theme="a" onclick="doSomething(); return false" rel="external">home</a>
+					<a href="index.html" data-role="button" id="home" data-inline="true" data-icon="home" onclick="doSomething(); return false" rel="external">home</a>
 				</div>
 				<div class="ui-block-b" style="text-align:center;">
 					<h1 class="ui-title">Ihre Anfrage </h1>
 				</div>
 				<div class="ui-block-c" align="right">
-					<a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" data-theme="a" href="#home" data-rel="back">Back</a>
+					<a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" href="#home" data-rel="back">Back</a>
 				</div>
 			</div>
 		</div>
@@ -55,13 +55,13 @@
 		</div>
 	</body>
 
-   <div data-role="footer" data-position="fixed">
+   <div data-role="footer" data-position="fixed" data-theme="b">
       <div data-role="navbar" >
          <ul >
-            <li><a href="index.html/#geschichte">&Uuml;ber Uns</a></li>
-            <li><a href="index.html/#cocktails" >Cocktails</a></li>
-            <li><a href="index.html/#gallery">Gallery</a></li>
-            <li><a href="index.html/#kontakt" >Kontakt</a></li>
+            <li><a href="index.html#geschichte" rel="external">&Uuml;ber Uns</a></li>
+            <li><a href="index.html#cocktails" rel="external">Cocktails</a></li>
+            <li><a href="index.html#gallery" rel="external">Gallery</a></li>
+            <li><a href="index.html#kontakt" rel="external">Kontakt</a></li>
          </ul>
       </div>
    </div>
@@ -115,7 +115,7 @@
 		
 			var cDate = $.getUrlVar('date');
 			//alert(cDate);
-   
+			
 			var landmarkID = $(this).parent().attr('data-landmark-id');
 			var postData = $(this).serialize();
 			//alert(postData);

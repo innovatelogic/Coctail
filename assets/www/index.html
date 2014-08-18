@@ -83,16 +83,13 @@
 	</style>
 		<script src="js/jquery-2.1.1.js"></script> 
 		<script src="js/jquery.mobile-1.4.3.js"></script>
- 
-		<script src="js/es5-shim.min.js" type="text/javascript"></script>
-		<script src="js/es5-sham.min.js" type="text/javascript"></script>
+
 		<script src="js/collapsible.js"></script>
 		<script type="text/javascript" src="gallery/js/klass.min.js"></script>
 		<script src="js/gallery.js"></script>
 		<script type="text/javascript" src="js/jsDatePick.jquery.full.1.3.js"></script>
 		<script src="js/imageflip.mini.js"></script>
 		<script src="js/gmaps.js" type="text/javascript"></script>
-		
 		
 		<script type="text/javascript">
 			var url = 'http://dev.innovatelogic.com/controller/viewDates.php';
@@ -136,10 +133,20 @@
 							{
 								var selectedDate = g_globalObject.getSelectedDay();
 								
-								if (selectedDate.year < g_globalObject.oCurrentDay.year ||
-									selectedDate.month < g_globalObject.oCurrentDay.month ||
-									selectedDate.day < g_globalObject.oCurrentDay.day)
+								//alert(selectedDate.month);
+								//alert(g_globalObject.oCurrentDay.month);
+								
+								var bQuit = true;
+								
+								if (selectedDate.year >= g_globalObject.oCurrentDay.year && 
+									selectedDate.month >= g_globalObject.oCurrentDay.month && 
+									selectedDate.day >= g_globalObject.oCurrentDay.day)
 								{
+									bQuit = false;
+								}
+					
+								
+								if (bQuit){
 									alert("Select valid date");
 									return;
 								}
@@ -151,7 +158,7 @@
 									return;
 								}
 								
-								window.location.href = "anfrage.html" + "?date=" + selectedDate.day + "-" + (selectedDate.month - 1) + "-" + selectedDate.year; // convert month to valid format
+								window.location.href = "anfrage.html" + "?date=" + selectedDate.day + "-" + (selectedDate.month) + "-" + selectedDate.year; // convert month to valid format
 							});
 		
 						} else {  
@@ -346,12 +353,35 @@
 					LoadContactPage();
 				});
 			});
+			
+			$(document).on('pagebeforechange', function(e, data)
+			{  
+				var to = data.toPage,
+				from = data.options.fromPage;
+    
+				if (typeof to  === 'string') 
+				{
+					var u = $.mobile.path.parseUrl(to);
+					to = u.hash || '#' + u.pathname.substring(1);
+					if (from) from = '#' + from.attr('id');
+				
+					if (from === '#home' && (to === '#aboutus' || to === '#cocktails' || to === '#gallery' || to === '#kontakt' || to === '#order'))
+					{
+						//alert('Can not transition from #index to #second!');
+					//	e.preventDefault();
+						//e.stopPropagation();
+						
+						// remove active status on a button, if transition was triggered with a button
+						//$.mobile.activePage.find('.ui-btn-active').removeClass('ui-btn-active ui-focus');;
+					}  
+				}
+			});
 		</script>
 	</head>
 
    <body>
       <div id="home" data-role="page">
-         <div data-role="header" data-fixed="true">
+         <div data-role="header" data-fixed="true" data-theme="b">
             <h1>100% Cocktail</h1>
          </div>
          <div data-role="home" id="home">
@@ -359,14 +389,14 @@
                <img src="img/logo100.png" width="200" height="250"></img>
             </div>
             <div data-role="controlgroup">               
-				<a href="#aboutus" data-role="button" data-theme="b">About us</a>
-				<a href="#cocktails" data-role="button" data-theme="b">Cocktails</a>
-				<a href="#gallery" data-role="button" data-theme="b" >Gallery</a>					
-				<a href="#kontakt" id="kontakt_btn0" data-role="button" data-theme="b">Kontakt</a>
-				<a href="#order" data-role="button" data-theme="b">Order</a>
+				<a href="#aboutus" data-role="button">About us</a>
+				<a href="#cocktails" data-role="button">Cocktails</a>
+				<a href="#gallery" data-role="button">Gallery</a>					
+				<a href="#kontakt" data-role="button" id="kontakt_btn0">Kontakt</a>
+				<a href="#order" data-role="button">Order</a>
             </div>
          </div>
-         <div data-role="footer" data-position="fixed">
+         <div data-role="footer" data-position="fixed" data-theme="b">
             <div data-role="navbar" >
                <ul >
                   <li><a href="#aboutus">&Uuml;ber Uns</a></li>
@@ -380,24 +410,24 @@
 	  
 <!--Order-->
 	<div id="order" data-role="page">
-		<div data-role="header" data-fixed="true">
+		<div data-role="header" data-fixed="true" data-theme="b">
 			<div class="ui-grid-b">
 				<div class="ui-block-a" align="left">
-					<a href="#home" data-role="button" data-inline="true" data-icon="home" data-theme="a" >home</a>
+					<a href="#home" data-role="button" data-inline="true" data-icon="home" >home</a>
 				</div>
 				<div class="ui-block-b" style="text-align:center;">
 					<h1 class="ui-title">Order </h1>
 				</div>
 				<div class="ui-block-c" align="right">
-					<a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" data-theme="a" href="#home" data-rel="back">Back</a>
+					<a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" href="#home" data-rel="back">Back</a>
 				</div>
 			</div>
 		</div>
 		<div data-role="content">
-			<div id="div3" style="margin:10px 0 30px 0; border:dashed 1px red; width=device-width; height:330px;">
+			<div id="div3" style="border:dashed 1px red; width=device-width; height:400px">
 			</div>
 		</div>
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" data-position="fixed" data-theme="b">
 			<div data-role="navbar" >
 				<ul >
 					<li><a href="#aboutus">&Uuml;ber Uns</a></li>
@@ -411,16 +441,16 @@
 		
 <!--About us-->
 	<div id="aboutus" data-role="page">
-		<div data-role="header" data-fixed="true">
+		<div data-role="header" data-fixed="true" data-theme="b">
             <div class="ui-grid-b">
 				<div class="ui-block-a" align="left">
-					<a href="#home" data-role="button" data-inline="true" data-icon="home" data-theme="a" >home</a>
+					<a href="#home" data-role="button" data-inline="true" data-icon="home">home</a>
 				</div>
 				<div class="ui-block-b" style="text-align:center;">
 					<h1 class="ui-title">&Uuml;ber Uns! </h1>
 				</div>
 				<div class="ui-block-c" align="right">
-					<a href="#home" data-role="button" data-icon="back" data-inline="true" data-iconpos="left" data-theme="a" data-rel="back">Back</a>
+					<a href="#home" data-role="button" data-icon="back" data-inline="true" data-iconpos="left" data-rel="back">Back</a>
 				</div>
             </div>
          </div>
@@ -439,7 +469,7 @@
                sind wir für Sie da.<br /><br /><br /><br />
             </div>
             <h4> Für weitere Fragen über unsere Leistungen und Preise richten Sie <a href="anfrage.html"> eine Anfrage</a> an uns</h4>
-            <div data-role="footer" data-position="fixed">
+            <div data-role="footer" data-position="fixed" data-theme="b">
                <div data-role="navbar" >
                   <ul >
                      <li><a href="#aboutus">&Uuml;ber Uns</a></li>
@@ -454,16 +484,16 @@
 
  <!--Cocktails-->
       <div id="cocktails" data-role="page">
-         <div data-role="header" data-fixed="true">
+         <div data-role="header" data-fixed="true" data-theme="b">
             <div class="ui-grid-b">
                <div class="ui-block-a" align="left">
-                  <a href="#home" data-role="button" data-inline="true" data-icon="home" data-theme="a" >home</a>
+                  <a href="#home" data-role="button" data-inline="true" data-icon="home">home</a>
                </div>
                <div class="ui-block-b" style="text-align:center;">
                   <h1 class="ui-title">Cocktails</h1>
                </div>
                <div class="ui-block-c" align="right">
-					<a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" data-theme="a" href="#home" data-rel="back">Back</a>
+					<a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" href="#home" data-rel="back">Back</a>
                </div>
             </div>
          </div>
@@ -500,7 +530,7 @@
                </div>
             </div>
          </div>
-         <div data-role="footer" data-position="fixed">
+         <div data-role="footer" data-position="fixed" data-theme="b">
             <div data-role="navbar" >
                <ul >
                   <li><a href="#aboutus">&Uuml;ber Uns</a></li>
@@ -513,19 +543,18 @@
       </div>
 
 <!--Contacts-->
-      <div id="kontakt" data-role="page">
+      <div id="kontakt" data-role="page" data-theme="b">
          <div data-role="header" data-fixed="true">
             <div class="ui-grid-b">
                <div class="ui-block-a" align="left">
-                  <a href="#home" data-role="button" data-inline="true" data-icon="home" data-theme="a" >home</a>
+                  <a href="#home" data-role="button" data-inline="true" data-icon="home" >home</a>
                   
                </div>
                <div class="ui-block-b" style="text-align:center;">
                   <h1 class="ui-title">Kontakt</h1>
                </div>
                <div class="ui-block-c" style="right-margin:100px;" align="right">
-                  <a href="https://www.facebook.com/pages/100Cocktail/246721422057697?fref=ts" data-inline="true" data-role="button" data-theme="a">facebook</a>
-				  <a  data-role="button" data-icon="back" data-inline="true" data-iconpos="left" data-theme="a" href="#home" data-rel="back">Back</a>
+				  <a  data-role="button" data-icon="back" data-inline="true" data-iconpos="left" href="#home" data-rel="back">Back</a>
                </div>
             </div>
          </div>
@@ -540,7 +569,7 @@
 				<div id="map"></div>
 			</div>
         
-         <div data-role="footer" data-position="fixed">
+         <div data-role="footer" data-position="fixed" data-theme="b">
             <div data-role="navbar" >
                <ul >
                   <li><a href="#aboutus">&Uuml;ber Uns</a></li>
@@ -553,11 +582,11 @@
       </div>
 
  <!--Gallery -->
-      <div id="gallery" data-role="page" data-theme="a">
-		<div data-role="header" data-fixed="true">
+      <div id="gallery" data-role="page">
+		<div data-role="header" data-fixed="true" data-theme="b">
 			<div class="ui-grid-b">
 			   <div class="ui-block-a" align="left">
-				  <a href="#home" data-role="button" data-inline="true" data-icon="home" data-theme="a" >home</a>
+				  <a href="#home" data-role="button" data-inline="true" data-icon="home">home</a>
 			   </div>
 			   
 			   <div class="ui-block-c" style="text-align:center;">
@@ -565,7 +594,7 @@
 			   </div>
 			   
 				<div class="ui-block-c" style="right-margin:100px;" align="right">
-				  <a  data-role="button" data-icon="back" data-inline="true" data-iconpos="left" data-theme="a" href="#home" data-rel="back">Back</a>
+				  <a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" href="#home" data-rel="back">Back</a>
 			   </div>
 			</div>
 		</div>
@@ -600,29 +629,11 @@
 						
 					</div><!--/slideshowWindow-->
 				</div><!--/slideshow-->
-		<!--		<ul id="iGallery">
-					<li><a href="gallery/images/full/01.jpg"><img src="gallery/images/full/01.jpg"/></a></li>
-					<li><a href="gallery/images/full/02.jpg"><img src="gallery/images/full/02.jpg"/></a></li>
-					<li><a href="gallery/images/full/03.jpg"><img src="gallery/images/full/03.jpg"/></a></li>
-					<li><a href="gallery/images/full/04.jpg"><img src="gallery/images/full/04.jpg"/></a></li>
-					<li><a href="gallery/images/full/05.jpg"><img src="gallery/images/full/05.jpg"/></a></li>
-					<li><a href="gallery/images/full/06.jpg" rel="external"><img src="gallery/images/thumb/06.jpg" alt="Image 006" /></a></li>
-					<li><a href="gallery/images/full/07.jpg" rel="external"><img src="gallery/images/thumb/07.jpg" alt="Image 007" /></a></li>
-					<li><a href="gallery/images/full/08.jpg" rel="external"><img src="gallery/images/thumb/08.jpg" alt="Image 008" /></a></li>
-					<li><a href="gallery/images/full/10.jpg" rel="external"><img src="gallery/images/thumb/10.jpg" alt="Image 010" /></a></li>
-					<li><a href="gallery/images/full/11.jpg" rel="external"><img src="gallery/images/thumb/11.jpg" alt="Image 011" /></a></li>
-					<li><a href="gallery/images/full/12.jpg" rel="external"><img src="gallery/images/thumb/12.jpg" alt="Image 012" /></a></li>
-					<li><a href="gallery/images/full/13.jpg" rel="external"><img src="gallery/images/thumb/13.jpg" alt="Image 013" /></a></li>
-					<li><a href="gallery/images/full/14.jpg" rel="external"><img src="gallery/images/thumb/14.jpg" alt="Image 014" /></a></li>
-					<li><a href="gallery/images/full/15.jpg" rel="external"><img src="gallery/images/thumb/15.jpg" alt="Image 015" /></a></li>
-					<li><a href="gallery/images/full/16.jpg" rel="external"><img src="gallery/images/thumb/16.jpg" alt="Image 016" /></a></li>
-					<li><a href="gallery/images/full/17.jpg" rel="external"><img src="gallery/images/thumb/17.jpg" alt="Image 017" /></a></li> 
-				</ul>-->
 			</div>
 		</div>
          
  <!-- Footer -->
-         <div data-role="footer" data-position="fixed">
+         <div data-role="footer" data-position="fixed" data-theme="b">
             <div data-role="navbar" >
                <ul >
                   <li><a href="#aboutus">&Uuml;ber Uns</a></li>

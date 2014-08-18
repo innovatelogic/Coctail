@@ -36,7 +36,7 @@
 .JsDatePickBox .boxMainInner { background:#ffffff; width:100%; height:100%; float:left; padding:0; }
 .JsDatePickBox .boxMainCellsContainer { background-color:#ffffff; margin:0; padding:0; width:100%; height:100%; }
 
-.JsDatePickBox .boxMainInner .controlsBar { overflow:hidden; height:20%; position:relative; }
+.JsDatePickBox .boxMainInner .controlsBar { overflow:hidden; height:10%; position:relative; }
 .JsDatePickBox .boxMainInner .controlsBarText { overflow:hidden; height:20px; line-height:20px; color:#000000; font-size:12px; text-align:center; }
 
 .JsDatePickBox .boxMainInner .monthForwardButton  { overflow:hidden; cursor:pointer; width:20px; height:20px; position:absolute; top:0px; right:22px; background:url(img/monthForward_normal.gif) left top no-repeat; }
