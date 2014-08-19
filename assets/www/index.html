@@ -113,13 +113,28 @@
 						{  
 							var finarray = [];
 
-							//alert(xhr.responseText);
-							var tmparray = xhr.responseText.split(",");
+							var str = xhr.responseText;
 							
+							if (str.charAt(str.length - 1) == ",") {
+								str = str.slice(0, -1);
+							}
+							
+							var tmparray = str.split(",");
+							//alert(str);
 							for (var i = 0; i < tmparray.length; i++)
 							{
 								var subarray = tmparray[i].split("-");
-								finarray.push(subarray);
+								
+								if (subarray.length == 4)
+								{
+									//alert(subarray);
+									finarray.push([parseInt(subarray[0]), parseInt(subarray[1]) - 1, parseInt(subarray[2]), parseInt(subarray[3])]); // convert month to [0-11] widget format
+								}
+								else
+								{
+									alert("invalid data");
+									//alert(subarray);
+								}
 							}
 
 							g_globalObject = new JsDatePick({useMode:1,
@@ -136,17 +151,30 @@
 								//alert(selectedDate.month);
 								//alert(g_globalObject.oCurrentDay.month);
 								
-								var bQuit = true;
+								var res = true;
 								
-								if (selectedDate.year >= g_globalObject.oCurrentDay.year && 
-									selectedDate.month >= g_globalObject.oCurrentDay.month && 
-									selectedDate.day >= g_globalObject.oCurrentDay.day)
+								var yrs_diff = selectedDate.year - g_globalObject.oCurrentDay.year;
+								
+								if (yrs_diff == 0)
 								{
-									bQuit = false;
+									var mnth_diff = selectedDate.month - g_globalObject.oCurrentDay.month;
+									
+									if (mnth_diff == 0)
+									{
+										res = (selectedDate.day - g_globalObject.oCurrentDay.day) >= 0;
+									}
+									else
+									{
+										res = (mnth_diff > 0);
+									}
 								}
-					
+								else
+								{
+									res = (yrs_diff > 0);
+								}
 								
-								if (bQuit){
+								
+								if (res == false){
 									alert("Select valid date");
 									return;
 								}
@@ -243,6 +271,7 @@
 			//----------------------------------------------------------------------------------------------
 			$(document).on('pageinit', '#order', function()
 			{
+				//alert("pageinit");
 				loadXMLDoc();
 			});
 			
@@ -352,29 +381,6 @@
 				$('#kontakt_btn6').bind('click', function() {
 					LoadContactPage();
 				});
-			});
-			
-			$(document).on('pagebeforechange', function(e, data)
-			{  
-				var to = data.toPage,
-				from = data.options.fromPage;
-    
-				if (typeof to  === 'string') 
-				{
-					var u = $.mobile.path.parseUrl(to);
-					to = u.hash || '#' + u.pathname.substring(1);
-					if (from) from = '#' + from.attr('id');
-				
-					if (from === '#home' && (to === '#aboutus' || to === '#cocktails' || to === '#gallery' || to === '#kontakt' || to === '#order'))
-					{
-						//alert('Can not transition from #index to #second!');
-					//	e.preventDefault();
-						//e.stopPropagation();
-						
-						// remove active status on a button, if transition was triggered with a button
-						//$.mobile.activePage.find('.ui-btn-active').removeClass('ui-btn-active ui-focus');;
-					}  
-				}
 			});
 		</script>
 	</head>

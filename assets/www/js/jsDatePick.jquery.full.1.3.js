@@ -1056,6 +1056,7 @@ JsDatePick.prototype.getDayCode_ddmmyy = function(day, month, year)
 //----------------------------------------------------------------------------------------------
 JsDatePick.prototype.getDayColor = function(aDateObject)
 {
+	//alert(aDateObject.getMonth());
 	if (this.getDayCode(aDateObject) != 0){
 		return "#e58494"
 	}
@@ -1129,12 +1130,14 @@ JsDatePick.prototype.setControlBarText = function(aText){
 	this.controlsBarTextCell.appendChild(aTextNode);
 };
 
+//----------------------------------------------------------------------------------------------
 JsDatePick.prototype.setTooltipText = function(aText){
 	$(this.tooltip).empty();
 	var aTextNode = document.createTextNode(aText);
 	this.tooltip.appendChild(aTextNode);
 };
 
+//----------------------------------------------------------------------------------------------
 JsDatePick.prototype.moveForwardOneYear = function(){
 	var desiredYear = this.currentYear + 1;
 	if (desiredYear < parseInt(this.oConfiguration.yearsRange[1])){
@@ -1146,6 +1149,7 @@ JsDatePick.prototype.moveForwardOneYear = function(){
 	}
 };
 
+//----------------------------------------------------------------------------------------------
 JsDatePick.prototype.moveBackOneYear = function(){
 	var desiredYear = this.currentYear - 1;
 	
