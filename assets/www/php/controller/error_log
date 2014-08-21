@@ -1,0 +1,559 @@
+[22-Jul-2014 12:45:41] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/innovate/public_html/dev/src/OrderControlService.php on line 56
+[22-Jul-2014 12:45:41] PHP Notice:  Undefined variable: productArray in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 12:45:41] PHP Warning:  Invalid argument supplied for foreach() in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 12:46:23] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/innovate/public_html/dev/src/OrderControlService.php on line 258
+[22-Jul-2014 12:47:07] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/innovate/public_html/dev/src/OrderControlService.php on line 56
+[22-Jul-2014 12:47:07] PHP Notice:  Undefined variable: productArray in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 12:47:07] PHP Warning:  Invalid argument supplied for foreach() in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 12:49:11] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/innovate/public_html/dev/src/OrderControlService.php on line 55
+[22-Jul-2014 12:49:11] PHP Notice:  Undefined variable: num in /home/innovate/public_html/dev/src/OrderControlService.php on line 57
+[22-Jul-2014 12:49:11] PHP Notice:  Undefined variable: productArray in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 12:49:11] PHP Warning:  Invalid argument supplied for foreach() in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 12:52:22] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/innovate/public_html/dev/src/OrderControlService.php on line 58
+[22-Jul-2014 12:52:22] PHP Notice:  Undefined variable: productArray in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 12:52:22] PHP Warning:  Invalid argument supplied for foreach() in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 12:53:57] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/innovate/public_html/dev/src/OrderControlService.php on line 58
+[22-Jul-2014 12:53:57] PHP Notice:  Undefined variable: productArray in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 12:53:57] PHP Warning:  Invalid argument supplied for foreach() in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 12:53:59] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/innovate/public_html/dev/src/OrderControlService.php on line 58
+[22-Jul-2014 12:53:59] PHP Notice:  Undefined variable: productArray in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 12:53:59] PHP Warning:  Invalid argument supplied for foreach() in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 12:54:00] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/innovate/public_html/dev/src/OrderControlService.php on line 58
+[22-Jul-2014 12:54:00] PHP Notice:  Undefined variable: productArray in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 12:54:00] PHP Warning:  Invalid argument supplied for foreach() in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 12:54:22] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/innovate/public_html/dev/src/OrderControlService.php on line 58
+[22-Jul-2014 12:54:22] PHP Notice:  Undefined variable: productArray in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 12:54:22] PHP Warning:  Invalid argument supplied for foreach() in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 13:00:08] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/innovate/public_html/dev/src/OrderControlService.php on line 55
+[22-Jul-2014 13:00:08] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/innovate/public_html/dev/src/OrderControlService.php on line 59
+[22-Jul-2014 13:00:08] PHP Notice:  Undefined variable: productArray in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 13:00:08] PHP Warning:  Invalid argument supplied for foreach() in /home/innovate/public_html/dev/controller/viewOrders.php on line 30
+[22-Jul-2014 13:03:39] PHP Notice:  Undefined variable: num in /home/innovate/public_html/dev/src/OrderControlService.php on line 58
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 13:04:21] PHP Warning:  Missing argument 8 for Order::addOrder(), called in /home/innovate/public_html/dev/src/OrderControlService.php on line 64 and defined in /home/innovate/public_html/dev/src/Order.php on line 14
+[22-Jul-2014 13:04:21] PHP Notice:  Undefined variable: orderText in /home/innovate/public_html/dev/src/Order.php on line 24
+[22-Jul-2014 14:07:57] PHP Parse error:  syntax error, unexpected '.' in /home/innovate/public_html/dev/controller/viewOrders.php on line 40
+[22-Jul-2014 14:08:33] PHP Parse error:  syntax error, unexpected ')' in /home/innovate/public_html/dev/src/OrderControlService.php on line 102
+[22-Jul-2014 14:09:20] PHP Parse error:  syntax error, unexpected '}' in /home/innovate/public_html/dev/controller/confirm.php on line 57
+[22-Jul-2014 14:09:56] PHP Parse error:  syntax error, unexpected '}' in /home/innovate/public_html/dev/controller/confirm.php on line 57
+[22-Jul-2014 14:09:58] PHP Parse error:  syntax error, unexpected '}' in /home/innovate/public_html/dev/controller/confirm.php on line 57
+[22-Jul-2014 14:10:05] PHP Parse error:  syntax error, unexpected '}' in /home/innovate/public_html/dev/controller/confirm.php on line 57
+[22-Jul-2014 14:10:21] PHP Warning:  require_once(src/Order.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/innovate/public_html/dev/controller/confirm.php on line 7
+[22-Jul-2014 14:10:21] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'src/Order.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/innovate/public_html/dev/controller/confirm.php on line 7
+[22-Jul-2014 14:11:18] PHP Notice:  Undefined index:  orderId in /home/innovate/public_html/dev/controller/confirm.php on line 29
+[22-Jul-2014 14:11:18] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/innovate/public_html/dev/src/OrderControlService.php on line 102
+[22-Jul-2014 14:11:18] PHP Notice:  Undefined index:  orderId in /home/innovate/public_html/dev/controller/confirm.php on line 45
+[22-Jul-2014 14:11:18] PHP Notice:  Undefined index:  orderId in /home/innovate/public_html/dev/controller/confirm.php on line 46
+[22-Jul-2014 14:11:18] PHP Notice:  A session had already been started - ignoring session_start() in /home/innovate/public_html/dev/controller/viewOrders.php on line 5
+[22-Jul-2014 14:12:09] PHP Notice:  Undefined index:  orderId in /home/innovate/public_html/dev/controller/confirm.php on line 29
+[22-Jul-2014 14:12:09] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/innovate/public_html/dev/src/OrderControlService.php on line 102
+[22-Jul-2014 14:12:09] PHP Notice:  Undefined index:  orderId in /home/innovate/public_html/dev/controller/confirm.php on line 45
+[22-Jul-2014 14:12:09] PHP Notice:  Undefined index:  orderId in /home/innovate/public_html/dev/controller/confirm.php on line 46
+[22-Jul-2014 14:12:09] PHP Notice:  A session had already been started - ignoring session_start() in /home/innovate/public_html/dev/controller/viewOrders.php on line 5
+[22-Jul-2014 14:14:53] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/confirm.php on line 27
+[22-Jul-2014 14:14:53] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/innovate/public_html/dev/src/OrderControlService.php on line 102
+[22-Jul-2014 14:14:53] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/confirm.php on line 43
+[22-Jul-2014 14:14:53] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/confirm.php on line 44
+[22-Jul-2014 14:14:53] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/innovate/public_html/dev/src/Order.php:32) in /home/innovate/public_html/dev/controller/viewOrders.php on line 5
+[22-Jul-2014 14:15:18] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/confirm.php on line 27
+[22-Jul-2014 14:15:18] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/confirm.php on line 43
+[22-Jul-2014 14:15:18] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/confirm.php on line 44
+[22-Jul-2014 14:15:18] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/innovate/public_html/dev/src/Order.php:32) in /home/innovate/public_html/dev/controller/viewOrders.php on line 5
+[22-Jul-2014 14:17:50] PHP Notice:  Undefined variable: GET in /home/innovate/public_html/dev/controller/confirm.php on line 26
+[22-Jul-2014 14:17:50] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/confirm.php on line 28
+[22-Jul-2014 14:17:50] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/confirm.php on line 44
+[22-Jul-2014 14:17:50] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/confirm.php on line 45
+[22-Jul-2014 14:17:50] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/innovate/public_html/dev/src/Order.php:32) in /home/innovate/public_html/dev/controller/viewOrders.php on line 5
+[22-Jul-2014 14:19:27] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/innovate/public_html/dev/src/Order.php:32) in /home/innovate/public_html/dev/controller/viewOrders.php on line 5
+[22-Jul-2014 14:19:56] PHP Parse error:  syntax error, unexpected T_PUBLIC in /home/innovate/public_html/dev/controller/confirmFin.php on line 25
+[22-Jul-2014 14:20:14] PHP Parse error:  syntax error, unexpected T_PUBLIC in /home/innovate/public_html/dev/controller/confirmFin.php on line 25
+[22-Jul-2014 14:20:15] PHP Parse error:  syntax error, unexpected T_PUBLIC in /home/innovate/public_html/dev/controller/confirmFin.php on line 25
+[22-Jul-2014 14:20:16] PHP Parse error:  syntax error, unexpected T_PUBLIC in /home/innovate/public_html/dev/controller/confirmFin.php on line 25
+[22-Jul-2014 14:20:29] PHP Parse error:  syntax error, unexpected '}' in /home/innovate/public_html/dev/controller/confirmFin.php on line 63
+[22-Jul-2014 14:20:51] PHP Warning:  require_once(src/Order.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/innovate/public_html/dev/controller/confirmFin.php on line 7
+[22-Jul-2014 14:20:51] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'src/Order.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/innovate/public_html/dev/controller/confirmFin.php on line 7
+[22-Jul-2014 14:21:08] PHP Warning:  require_once(src/Order.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/innovate/public_html/dev/controller/confirmFin.php on line 7
+[22-Jul-2014 14:21:08] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'src/Order.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/innovate/public_html/dev/controller/confirmFin.php on line 7
+[22-Jul-2014 14:21:18] PHP Notice:  Undefined index:  orderId in /home/innovate/public_html/dev/controller/confirmFin.php on line 38
+[22-Jul-2014 14:21:18] PHP Notice:  Undefined index:  cofirmStatusId in /home/innovate/public_html/dev/controller/confirmFin.php on line 38
+[22-Jul-2014 14:21:18] PHP Notice:  Undefined index:  orderId in /home/innovate/public_html/dev/controller/confirmFin.php on line 41
+[22-Jul-2014 14:21:52] PHP Notice:  Undefined index:  orderId in /home/innovate/public_html/dev/controller/confirmFin.php on line 38
+[22-Jul-2014 14:21:52] PHP Notice:  Undefined index:  orderId in /home/innovate/public_html/dev/controller/confirmFin.php on line 41
+[22-Jul-2014 14:22:49] PHP Notice:  Undefined index:  orderId in /home/innovate/public_html/dev/controller/confirmFin.php on line 38
+[22-Jul-2014 14:22:49] PHP Notice:  Undefined index:  orderId in /home/innovate/public_html/dev/controller/confirmFin.php on line 41
+[22-Jul-2014 14:27:55] PHP Notice:  Undefined variable: str in /home/innovate/public_html/dev/controller/confirmFin.php on line 31
+[22-Jul-2014 14:32:02] PHP Fatal error:  Cannot redeclare vievstatus() (previously declared in /home/innovate/public_html/dev/controller/confirm.php:22) in /home/innovate/public_html/dev/controller/viewOrders.php on line 35
+[22-Jul-2014 14:33:50] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/innovate/public_html/dev/src/Order.php:32) in /home/innovate/public_html/dev/controller/viewOrders.php on line 5
+[27-Jul-2014 09:03:18] PHP Parse error:  syntax error, unexpected T_ECHO in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[27-Jul-2014 09:03:49] PHP Parse error:  syntax error, unexpected '.' in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[27-Jul-2014 09:03:51] PHP Parse error:  syntax error, unexpected '.' in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[27-Jul-2014 09:03:51] PHP Parse error:  syntax error, unexpected '.' in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[27-Jul-2014 09:03:52] PHP Parse error:  syntax error, unexpected '.' in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[27-Jul-2014 09:03:52] PHP Parse error:  syntax error, unexpected '.' in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[27-Jul-2014 09:03:52] PHP Parse error:  syntax error, unexpected '.' in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[27-Jul-2014 09:03:53] PHP Parse error:  syntax error, unexpected '.' in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 21:50:32] PHP Fatal error:  Call to undefined method Order::date() in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 21:54:15] PHP Fatal error:  Call to undefined method Order::date() in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 21:54:16] PHP Fatal error:  Call to undefined method Order::date() in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 21:54:17] PHP Fatal error:  Call to undefined method Order::date() in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 21:54:17] PHP Fatal error:  Call to undefined method Order::date() in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 21:54:18] PHP Fatal error:  Call to undefined method Order::date() in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 21:54:18] PHP Fatal error:  Call to undefined method Order::date() in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 21:54:18] PHP Fatal error:  Call to undefined method Order::date() in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 21:54:18] PHP Fatal error:  Call to undefined method Order::date() in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 21:54:19] PHP Fatal error:  Call to undefined method Order::date() in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 21:54:19] PHP Fatal error:  Call to undefined method Order::date() in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 21:54:31] PHP Parse error:  syntax error, unexpected '=' in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 21:57:04] PHP Fatal error:  Call to undefined method Order::date() in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:01:10] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:18] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:20] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:02:21] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 32
+[28-Jul-2014 22:06:54] PHP Fatal error:  Call to a member function format() on a non-object in /home/innovate/public_html/dev/controller/viewDates.php on line 34
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:11:52] PHP Notice:  A non well formed numeric value encountered in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[28-Jul-2014 22:13:19] PHP Fatal error:  Call to a member function format() on a non-object in /home/innovate/public_html/dev/controller/viewDates.php on line 35
+[29-Jul-2014 04:23:29] PHP Parse error:  syntax error, unexpected T_ECHO in /home/innovate/public_html/dev/controller/test.php on line 3
+[01-Aug-2014 13:38:45] PHP Parse error:  syntax error, unexpected $end in /home/innovate/public_html/dev/controller/test.php on line 26
+[06-Aug-2014 11:46:28] PHP Warning:  require_once(src/Order.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/innovate/public_html/dev/controller/addOrder.php on line 5
+[06-Aug-2014 11:46:28] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'src/Order.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/innovate/public_html/dev/controller/addOrder.php on line 5
+[06-Aug-2014 11:47:16] PHP Warning:  require_once(src/Order.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/innovate/public_html/dev/controller/addOrder.php on line 5
+[06-Aug-2014 11:47:16] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'src/Order.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/innovate/public_html/dev/controller/addOrder.php on line 5
+[06-Aug-2014 11:48:01] PHP Warning:  require_once(src/Order.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/innovate/public_html/dev/controller/addOrder.php on line 5
+[06-Aug-2014 11:48:01] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'src/Order.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/innovate/public_html/dev/controller/addOrder.php on line 5
+[06-Aug-2014 13:19:40] PHP Warning:  require_once(src/Order.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/innovate/public_html/dev/controller/addOrder.php on line 8
+[06-Aug-2014 13:19:40] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'src/Order.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/innovate/public_html/dev/controller/addOrder.php on line 8
+[06-Aug-2014 13:19:42] PHP Warning:  require_once(src/Order.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/innovate/public_html/dev/controller/addOrder.php on line 8
+[06-Aug-2014 13:19:42] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'src/Order.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/innovate/public_html/dev/controller/addOrder.php on line 8
+[06-Aug-2014 13:20:22] PHP Warning:  require_once(src/Order.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/innovate/public_html/dev/controller/addOrder.php on line 8
+[06-Aug-2014 13:20:22] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'src/Order.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/innovate/public_html/dev/controller/addOrder.php on line 8
+[06-Aug-2014 13:20:31] PHP Warning:  require_once(src/Order.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/innovate/public_html/dev/controller/addOrder.php on line 8
+[06-Aug-2014 13:20:31] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'src/Order.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/innovate/public_html/dev/controller/addOrder.php on line 8
+[06-Aug-2014 13:20:33] PHP Warning:  require_once(src/Order.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/innovate/public_html/dev/controller/addOrder.php on line 8
+[06-Aug-2014 13:20:33] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'src/Order.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/innovate/public_html/dev/controller/addOrder.php on line 8
+[06-Aug-2014 13:21:00] PHP Notice:  Undefined index:  name in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[06-Aug-2014 13:21:01] PHP Notice:  Undefined index:  name in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[06-Aug-2014 13:21:02] PHP Notice:  Undefined index:  name in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[06-Aug-2014 13:21:03] PHP Notice:  Undefined index:  name in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[06-Aug-2014 13:21:48] PHP Notice:  Undefined index:  name in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[06-Aug-2014 13:23:27] PHP Notice:  Undefined index:  name in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[06-Aug-2014 13:23:28] PHP Notice:  Undefined index:  name in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[06-Aug-2014 13:24:12] PHP Notice:  Undefined index:  name in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[06-Aug-2014 13:24:13] PHP Notice:  Undefined index:  name in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[06-Aug-2014 13:24:14] PHP Notice:  Undefined index:  name in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 02:21:06] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 02:21:06] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 02:21:06] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 02:21:06] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 02:21:06] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 02:44:30] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 02:44:30] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 02:44:30] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 02:44:30] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 02:44:30] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 02:44:48] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 02:44:48] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 02:44:48] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 02:44:48] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 02:44:48] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 03:40:14] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 03:40:14] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 03:40:14] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 03:40:14] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 03:40:14] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 03:40:39] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 03:40:39] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 03:40:39] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 03:40:39] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 03:40:39] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 03:47:39] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 03:47:39] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 03:47:39] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 03:47:39] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 03:47:39] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 04:00:01] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 04:00:01] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 04:00:01] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 04:00:01] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 04:00:01] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 17:28:21] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 17:28:21] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 17:28:21] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 17:28:21] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 17:28:21] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 17:32:03] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 17:32:03] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 17:32:03] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 17:32:03] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 17:32:03] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 17:36:03] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 17:36:03] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 17:36:03] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 17:36:03] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 17:36:03] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 17:38:14] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 17:38:14] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 17:38:14] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 17:38:14] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 17:38:14] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 17:38:42] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 17:38:42] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 17:38:42] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 17:38:42] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 17:38:42] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 17:43:44] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 17:43:44] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 17:43:44] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 17:43:44] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 17:43:44] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 17:44:38] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 17:44:38] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 17:44:38] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 17:44:38] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 17:44:38] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 17:47:10] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 17:47:10] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 17:47:10] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 17:47:10] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 17:47:10] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 17:49:38] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 17:49:38] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 17:49:38] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 17:49:38] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 17:49:38] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 17:50:33] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 17:50:33] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 17:50:33] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 17:50:33] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 17:50:33] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 18:00:36] PHP Notice:  Undefined index:  date in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 18:00:36] PHP Notice:  Undefined index:  userName in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 18:00:36] PHP Notice:  Undefined index:  tema in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 18:00:36] PHP Notice:  Undefined index:  email in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 18:00:36] PHP Notice:  Undefined index:  mes in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 18:03:18] PHP Notice:  Undefined index:  date in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 18:03:18] PHP Notice:  Undefined index:  userName in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 18:03:18] PHP Notice:  Undefined index:  tema in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 18:03:18] PHP Notice:  Undefined index:  email in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 18:03:18] PHP Notice:  Undefined index:  mes in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 18:04:02] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 18:04:02] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 18:04:02] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 18:04:02] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 18:04:02] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 18:05:42] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 18:05:42] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 18:05:42] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 18:05:42] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 18:05:42] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 18:07:16] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 18:07:16] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 18:07:16] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 18:07:16] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 18:07:16] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 18:07:54] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 18:07:54] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 18:07:54] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 18:07:54] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 18:07:54] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[07-Aug-2014 18:10:26] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 56
+[07-Aug-2014 18:10:26] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[07-Aug-2014 18:10:26] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[07-Aug-2014 18:10:26] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[07-Aug-2014 18:10:26] PHP Notice:  Undefined variable: _SESSION in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[08-Aug-2014 09:35:40] PHP Notice:  Undefined index:  userName in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[08-Aug-2014 09:35:40] PHP Notice:  Undefined index:  tema in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[08-Aug-2014 09:35:40] PHP Notice:  Undefined index:  email in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[08-Aug-2014 09:35:40] PHP Notice:  Undefined index:  mes in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[08-Aug-2014 09:35:53] PHP Notice:  Undefined index:  userName in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[08-Aug-2014 09:35:53] PHP Notice:  Undefined index:  tema in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[08-Aug-2014 09:35:53] PHP Notice:  Undefined index:  email in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[08-Aug-2014 09:35:53] PHP Notice:  Undefined index:  mes in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[08-Aug-2014 09:38:29] PHP Notice:  Undefined index:  userName in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[08-Aug-2014 09:38:29] PHP Notice:  Undefined index:  tema in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[08-Aug-2014 09:38:29] PHP Notice:  Undefined index:  email in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[08-Aug-2014 09:38:29] PHP Notice:  Undefined index:  mes in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[08-Aug-2014 09:47:43] PHP Notice:  Undefined index:  userName in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[08-Aug-2014 09:47:43] PHP Notice:  Undefined index:  tema in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[08-Aug-2014 09:47:43] PHP Notice:  Undefined index:  email in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[08-Aug-2014 09:47:43] PHP Notice:  Undefined index:  mes in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[08-Aug-2014 09:51:17] PHP Notice:  Undefined index:  userName in /home/innovate/public_html/dev/controller/addOrder.php on line 57
+[08-Aug-2014 09:51:17] PHP Notice:  Undefined index:  tema in /home/innovate/public_html/dev/controller/addOrder.php on line 58
+[08-Aug-2014 09:51:17] PHP Notice:  Undefined index:  email in /home/innovate/public_html/dev/controller/addOrder.php on line 59
+[08-Aug-2014 09:51:17] PHP Notice:  Undefined index:  mes in /home/innovate/public_html/dev/controller/addOrder.php on line 62
+[08-Aug-2014 10:15:02] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/innovate/public_html/dev/controller/addOrder.php on line 61
