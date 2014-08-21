@@ -151,17 +151,18 @@
 								//alert(selectedDate.month);
 								//alert(g_globalObject.oCurrentDay.month);
 								
+								// compare current and selected date
 								var res = true;
 								
 								var yrs_diff = selectedDate.year - g_globalObject.oCurrentDay.year;
 								
-								if (yrs_diff == 0)
+								if (yrs_diff == 0) // this year 
 								{
-									var mnth_diff = selectedDate.month - g_globalObject.oCurrentDay.month;
+									var mnth_diff = selectedDate.month - g_globalObject.oCurrentDay.month; // compare month
 									
-									if (mnth_diff == 0)
+									if (mnth_diff == 0) // this month
 									{
-										res = (selectedDate.day - g_globalObject.oCurrentDay.day) >= 0;
+										res = (selectedDate.day - g_globalObject.oCurrentDay.day) >= 0; // compare days
 									}
 									else
 									{
@@ -172,7 +173,6 @@
 								{
 									res = (yrs_diff > 0);
 								}
-								
 								
 								if (res == false){
 									alert("Select valid date");
@@ -478,10 +478,10 @@
             <div data-role="footer" data-position="fixed" data-theme="b">
                <div data-role="navbar" >
                   <ul >
-                     <li><a href="#aboutus">&Uuml;ber Uns</a></li>
                      <li><a href="#cocktails" >Cocktails</a></li>
                      <li><a href="#gallery">Gallery</a></li>
                      <li><a href="#kontakt" id="kontakt_btn3">Kontakt</a></li>
+					 <li><a href="#order">Order</a></li>
                   </ul>
                </div>
             </div>
@@ -540,9 +540,9 @@
             <div data-role="navbar" >
                <ul >
                   <li><a href="#aboutus">&Uuml;ber Uns</a></li>
-                  <li><a href="#cocktails">Cocktails</a></li>
                   <li><a href="#gallery">Gallery</a></li>
                   <li><a href="#kontakt" id="kontakt_btn4">Kontakt</a></li>
+				  <li><a href="#order">Order</a></li>
                </ul>
             </div>
          </div>
@@ -605,8 +605,8 @@
                <ul >
                   <li><a href="#aboutus">&Uuml;ber Uns</a></li>
                   <li><a href="#cocktails">Cocktails</a></li>
-                  <li><a href="#gallery">Gallery</a></li>
                   <li><a href="#kontakt" id="kontakt_btn6">Kontakt</a></li>
+				  <li><a href="#order">Order</a></li>
                </ul>
             </div>
          </div>
