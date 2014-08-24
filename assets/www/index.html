@@ -30,7 +30,7 @@
 
 		#slideshow #slideshowWindow .slide .slideText {
 			position:relative;
-			top:-140px;
+			top:-50px;
 			left:0px;
 			width:300px;
 			height:30px;
@@ -38,13 +38,13 @@
 			background-repeat:repeat;
 			margin:0;
 			padding:0;
-			color:#ff0000;
+			color:#000000;
 			font-family:Myriad Pro, Arial, Helvetica, sans-serif;
 		}
 
 	#slideshow #slideshowWindow .slide .slideText a:link, 
 	#slideshow #slideshowWindow .slide .slideText a:visited {
-		color:#ff0000;
+		color:#000000;
 		text-decoration:none;
 	}
 
@@ -64,8 +64,8 @@
 	#leftNav {
 		top:10%;
 		left:0;
-		width:56px;
-		height:56px;
+		width:36px;
+		height:36px;
 		background-image:url(img/previous.png);
 		background-repeat:no-repeat;
 		z-index:999;
@@ -74,8 +74,8 @@
 	#rightNav {
 		top:10%;
 		right:0%;
-		width:56px;
-		height:56px;
+		width:36px;
+		height:36px;
 		background-image:url(img/next.png);
 		background-repeat:no-repeat;
 		z-index:999;
@@ -175,14 +175,14 @@
 								}
 								
 								if (res == false){
-									alert("Select valid date");
+									alert("Das Datum ist abgelaufen. W&auml;hlen Sie ein gueltiges Datum aus!");
 									return;
 								}
 								
 								var dayCode = g_globalObject.getDayCode_ddmmyy(selectedDate.day, (selectedDate.month - 1), selectedDate.year);
 								if (dayCode != 0)
 								{
-									alert("Sorry this date preordered yet, try to select another day");
+									alert("Sorry, dieser Tag ist reserviert. W&auml;hlen Sie ein anderes Datum aus!");
 									return;
 								}
 								
@@ -392,14 +392,14 @@
          </div>
          <div data-role="home" id="home">
             <div id="img" style="text-align:center;">
-               <img src="img/logo100.png" width="200" height="250"></img>
+               <img src="img/logo100.png" width="200" height="230"></img>
             </div>
             <div data-role="controlgroup">               
-				<a href="#aboutus" data-role="button">About us</a>
+				<a href="#aboutus" data-role="button">&Uuml;ber uns</a>
 				<a href="#cocktails" data-role="button">Cocktails</a>
 				<a href="#gallery" data-role="button">Gallery</a>					
 				<a href="#kontakt" data-role="button" id="kontakt_btn0">Kontakt</a>
-				<a href="#order" data-role="button">Order</a>
+				<a href="#order" data-role="button">Anfrage</a>
             </div>
          </div>
          <div data-role="footer" data-position="fixed" data-theme="b">
@@ -418,19 +418,21 @@
 	<div id="order" data-role="page">
 		<div data-role="header" data-fixed="true" data-theme="b">
 			<div class="ui-grid-b">
-				<div class="ui-block-a" align="left">
-					<a href="#home" data-role="button" data-inline="true" data-icon="home" >home</a>
+				<div class="ui-block-a" align="left" style="width:20%;">
+					<a href="#home" data-role="button" data-inline="true" data-icon="home" ></a>
 				</div>
-				<div class="ui-block-b" style="text-align:center;">
-					<h1 class="ui-title">Order </h1>
+				<div class="ui-block-b" style="text-align:center; width:60%;">
+					<h1 class="ui-title">Anfrage </h1>
 				</div>
-				<div class="ui-block-c" align="right">
-					<a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" href="#home" data-rel="back">Back</a>
+				<div class="ui-block-c" align="right" style="width:20%;">
+					<a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" href="#home" data-rel="back"></a>
 				</div>
 			</div>
 		</div>
+
 		<div data-role="content">
-			<div id="div3" style="border:dashed 1px red; width=device-width; height:400px">
+			<h3>W&auml;hlen Sie ein Datum aus:</h3> <br />
+			<div id="div3" style="border:dashed 1px red; width=device-width; height:380px">
 			</div>
 		</div>
 		<div data-role="footer" data-position="fixed" data-theme="b">
@@ -449,22 +451,23 @@
 	<div id="aboutus" data-role="page">
 		<div data-role="header" data-fixed="true" data-theme="b">
             <div class="ui-grid-b">
-				<div class="ui-block-a" align="left">
-					<a href="#home" data-role="button" data-inline="true" data-icon="home">home</a>
+				<div class="ui-block-a" align="left" style="width:20%;">
+					<a href="#home" data-role="button" data-inline="true" data-icon="home"></a>
 				</div>
-				<div class="ui-block-b" style="text-align:center;">
-					<h1 class="ui-title">&Uuml;ber Uns! </h1>
+				<div class="ui-block-b" style="text-align:center; width:60%;">
+					<h1 class="ui-title">&Uuml;ber Uns </h1>
 				</div>
-				<div class="ui-block-c" align="right">
-					<a href="#home" data-role="button" data-icon="back" data-inline="true" data-iconpos="left" data-rel="back">Back</a>
+				<div class="ui-block-c" align="right"  style="width:20%;">
+					<a href="#home" data-role="button" data-icon="back" data-inline="true" data-iconpos="left" data-rel="back"></a>
 				</div>
             </div>
          </div>
          <div data-role="content">
             <h3>Ihr mobiler Cocktailservice ist für Sie  immer Unterwegs</h3>
             <div class="demo">
-               <br />"100% COCKTAIL", der mobile Cocktailservice für die Region Niedersachsen und Nordrhein-Westfalen, führt Ihnen anspruchsvolle Leistungen.<br />
-               <br /><br />Als Highlight für Ihre:<br />
+               <br />"100% COCKTAIL", der mobile Cocktailservice für die Region Niedersachsen und Nordrhein-Westfalen, führt Ihnen anspruchsvolle Leistungen
+               und bietet einen tollen Service an.<br />
+			   <br /><br />Als Highlight für Ihre:<br />
                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;	Hochzeit,<br />
                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;	Geburtstagsparty,<br />
                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;	Betriebsfeiern,<br />
@@ -474,14 +477,13 @@
                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8226;	und so weiter<br /><br />
                sind wir für Sie da.<br /><br /><br /><br />
             </div>
-            <h4> Für weitere Fragen über unsere Leistungen und Preise richten Sie <a href="anfrage.html"> eine Anfrage</a> an uns</h4>
             <div data-role="footer" data-position="fixed" data-theme="b">
                <div data-role="navbar" >
                   <ul >
                      <li><a href="#cocktails" >Cocktails</a></li>
                      <li><a href="#gallery">Gallery</a></li>
                      <li><a href="#kontakt" id="kontakt_btn3">Kontakt</a></li>
-					 <li><a href="#order">Order</a></li>
+					 <li><a href="#order">Anfrage</a></li>
                   </ul>
                </div>
             </div>
@@ -492,14 +494,14 @@
       <div id="cocktails" data-role="page">
          <div data-role="header" data-fixed="true" data-theme="b">
             <div class="ui-grid-b">
-               <div class="ui-block-a" align="left">
-                  <a href="#home" data-role="button" data-inline="true" data-icon="home">home</a>
+               <div class="ui-block-a" align="left" style="width:20%;">
+                  <a href="#home" data-role="button" data-inline="true" data-icon="home"></a>
                </div>
-               <div class="ui-block-b" style="text-align:center;">
+               <div class="ui-block-b" style="text-align:center; width:60%;">
                   <h1 class="ui-title">Cocktails</h1>
                </div>
-               <div class="ui-block-c" align="right">
-					<a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" href="#home" data-rel="back">Back</a>
+               <div class="ui-block-c" align="right" style="width:20%;">
+					<a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" href="#home" data-rel="back"></a>
                </div>
             </div>
          </div>
@@ -542,7 +544,7 @@
                   <li><a href="#aboutus">&Uuml;ber Uns</a></li>
                   <li><a href="#gallery">Gallery</a></li>
                   <li><a href="#kontakt" id="kontakt_btn4">Kontakt</a></li>
-				  <li><a href="#order">Order</a></li>
+				  <li><a href="#order">Anfrage</a></li>
                </ul>
             </div>
          </div>
@@ -552,16 +554,16 @@
       <div id="gallery" data-role="page">
 		<div data-role="header" data-fixed="true" data-theme="b">
 			<div class="ui-grid-b">
-			   <div class="ui-block-a" align="left">
-				  <a href="#home" data-role="button" data-inline="true" data-icon="home">home</a>
+			   <div class="ui-block-a" align="left" style="width:20%;">
+				  <a href="#home" data-role="button" data-inline="true" data-icon="home"></a>
 			   </div>
 			   
-			   <div class="ui-block-c" style="text-align:center;">
+			   <div class="ui-block-b" style="text-align:center; width:60%;">
 				  <h1 class="ui-title">Gallery</h1>
 			   </div>
 			   
-				<div class="ui-block-c" style="right-margin:100px;" align="right">
-				  <a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" href="#home" data-rel="back">Back</a>
+				<div class="ui-block-c" style="width:20%;" align="right">
+				  <a data-role="button" data-icon="back" data-inline="true" data-iconpos="left" href="#home" data-rel="back"></a>
 			   </div>
 			</div>
 		</div>
@@ -570,35 +572,80 @@
 			<div class="content-primary">
 				<div id="slideshow">
 					<div id="slideshowWindow">
+					
 						<div class="slide">
 							<img src="gallery/images/full/01.jpg" />
 							<div class="slideText">
-								<h2 class="slideTitle">Tequila</h2>
-								<p class="slideDes">Tequila was first produced
-								in the 16th century
-								near the location of the city of Tequila.</p>
+								<h2 class="slideTitle">Sex on the Beach</h2>
 							</div><!--/slideText-->
 						</div><!--/slide-->
 						<div class="slide">
 							<img src="gallery/images/full/02.jpg" />
 							<div class="slideText">
-								<h2 class="slideTitle">Rum</h2>
-								<p class="slideDes">Rums are produced in various grades. Light rums are commonly used in cocktails, whereas "golden" and "dark" rums were typically consumed individually</p>
+								<h2 class="slideTitle">First Class Whiskey</h2>
+
 							</div><!--/slideText-->
 						</div><!--/slide-->
 						<div class="slide">
 							<img src="gallery/images/full/03.jpg" />
 							<div class="slideText">
-								<h2 class="slideTitle">Vodka</h2>
-								<p class="slideDes">Vodka is traditionally drunk neat, though it is often served chilled in the vodka belt countries of Eastern Europe</p>
+								<h2 class="slideTitle">Gro&szlig;e Auswahl</h2>
 							</div><!--/slideText-->
 						</div><!--/slide-->
-						
+						<div class="slide">
+							<img src="gallery/images/full/05.jpg" />
+							<div class="slideText">
+								<h2 class="slideTitle">Unsere Theke</h2>
+							</div><!--/slideText-->
+						</div><!--/slide-->
+						<div class="slide">
+							<img src="gallery/images/full/06.jpg" />
+							<div class="slideText">
+								<h2 class="slideTitle">mit Liebe gemacht</h2>
+							</div><!--/slideText-->
+						</div><!--/slide-->
+						<div class="slide">
+							<img src="gallery/images/full/07.jpg" />
+							<div class="slideText">
+								<h2 class="slideTitle">Cocktail-Mix</h2>
+							</div><!--/slideText-->
+						</div><!--/slide-->
+						<div class="slide">
+							<img src="gallery/images/full/10.jpg" />
+							<div class="slideText">
+								<h2 class="slideTitle">Cosmopolitan</h2>
+							</div><!--/slideText-->
+						</div><!--/slide-->
+						<div class="slide">
+							<img src="gallery/images/full/11.jpg" />
+							<div class="slideText">
+								<h2 class="slideTitle">Frisch</h2>
+							</div><!--/slideText-->
+						</div><!--/slide-->
+						<div class="slide">
+							<img src="gallery/images/full/12.jpg" />
+							<div class="slideText">
+								<h2 class="slideTitle">Frisch gemacht</h2>
+							</div><!--/slideText-->
+						</div><!--/slide-->
+						<div class="slide">
+							<img src="gallery/images/full/13.jpg" />
+							<div class="slideText">
+								<h2 class="slideTitle">Hawaii</h2>
+							</div><!--/slideText-->
+						</div><!--/slide-->
+						<div class="slide">
+							<img src="gallery/images/full/14.jpg" />
+							<div class="slideText">
+								<h2 class="slideTitle">Vielfalt</h2>
+							</div><!--/slideText-->
+						</div><!--/slide-->
+
 					</div><!--/slideshowWindow-->
 				</div><!--/slideshow-->
 			</div>
 		</div>
-         
+
  <!-- Footer -->
          <div data-role="footer" data-position="fixed" data-theme="b">
             <div data-role="navbar" >
@@ -606,7 +653,7 @@
                   <li><a href="#aboutus">&Uuml;ber Uns</a></li>
                   <li><a href="#cocktails">Cocktails</a></li>
                   <li><a href="#kontakt" id="kontakt_btn6">Kontakt</a></li>
-				  <li><a href="#order">Order</a></li>
+				  <li><a href="#order">Anfrage</a></li>
                </ul>
             </div>
          </div>
